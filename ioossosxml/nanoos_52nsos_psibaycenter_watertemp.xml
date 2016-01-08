@@ -1,0 +1,1641 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<om:ObservationCollection xmlns:om="http://www.opengis.net/om/1.0" xmlns:gml="http://www.opengis.net/gml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:swe="http://www.opengis.net/swe/1.0.1" xmlns:swe2="http://www.opengis.net/swe/2.0" gml:id="oc_1452273287035" xsi:schemaLocation="http://www.opengis.net/swes/2.0 http://schemas.opengis.net/swes/2.0/swes.xsd http://www.opengis.net/om/1.0 http://schemas.opengis.net/om/1.0.0/om.xsd http://www.opengis.net/gml http://schemas.opengis.net/gml/3.1.1/base/gml.xsd http://www.opengis.net/swe/1.0.1 http://schemas.opengis.net/sweCommon/1.0.1/swe.xsd">
+  <gml:metaDataProperty xlink:title="disclaimer">
+    <gml:GenericMetaData>
+      <gml:description>Data provided without any guarantee of accuracy. Provider assumes no liability whatsoever. USE AT YOUR OWN RISK.</gml:description>
+    </gml:GenericMetaData>
+  </gml:metaDataProperty>
+  <gml:metaDataProperty xlink:title="ioosTemplateVersion" xlink:href="http://code.google.com/p/ioostech/source/browse/#svn%2Ftrunk%2Ftemplates%2FMilestone1.0">
+    <gml:version>1.0</gml:version>
+  </gml:metaDataProperty>
+  <gml:metaDataProperty xlink:title="softwareVersion">
+    <gml:version>0.8.1-SNAPSHOT</gml:version>
+  </gml:metaDataProperty>
+  <gml:boundedBy>
+    <gml:Envelope srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+      <gml:lowerCorner>46.62900161743164 -123.95159912109375</gml:lowerCorner>
+      <gml:upperCorner>46.62900161743164 -123.95159912109375</gml:upperCorner>
+    </gml:Envelope>
+  </gml:boundedBy>
+  <om:member>
+    <om:Observation>
+      <gml:description>timeSeries</gml:description>
+      <om:samplingTime>
+        <gml:TimePeriod>
+          <gml:beginPosition>2016-01-03T00:01:06.000Z</gml:beginPosition>
+          <gml:endPosition>2016-01-05T22:59:07.000Z</gml:endPosition>
+        </gml:TimePeriod>
+      </om:samplingTime>
+      <om:procedure>
+        <om:Process>
+          <gml:member xlink:href="urn:ioos:station:nanoos:psi_baycenter"/>
+        </om:Process>
+      </om:procedure>
+      <om:observedProperty>
+        <swe:CompositePhenomenon dimension="1" gml:id="observedproperties">
+          <gml:name>Response Observed Properties</gml:name>
+          <swe:component xlink:href="http://mmisw.org/ont/cf/parameter/sea_water_temperature"/>
+        </swe:CompositePhenomenon>
+      </om:observedProperty>
+      <om:featureOfInterest>
+        <gml:FeatureCollection>
+          <gml:metaDataProperty xlink:title="featureType">
+            <gml:GenericMetaData>
+              <gml:name codeSpace="http://cf-pcmdi.llnl.gov/documents/cf-conventions/1.6/cf-conventions.html#discrete-sampling-geometries">timeSeries</gml:name>
+            </gml:GenericMetaData>
+          </gml:metaDataProperty>
+          <gml:boundedBy>
+            <gml:Envelope srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+              <gml:lowerCorner>46.62900161743164 -123.95159912109375</gml:lowerCorner>
+              <gml:upperCorner>46.62900161743164 -123.95159912109375</gml:upperCorner>
+            </gml:Envelope>
+          </gml:boundedBy>
+          <gml:location>
+            <gml:MultiPoint srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+              <gml:pointMembers>
+                <gml:Point>
+                  <gml:name>urn:ioos:station:nanoos:psi_baycenter</gml:name>
+                  <gml:pos>46.62900161743164 -123.95159912109375</gml:pos>
+                </gml:Point>
+              </gml:pointMembers>
+            </gml:MultiPoint>
+          </gml:location>
+        </gml:FeatureCollection>
+      </om:featureOfInterest>
+      <om:result>
+        <swe2:DataRecord definition="http://mmisw.org/ont/ioos/swe_element_type/observationRecord">
+          <swe2:field name="stations">
+            <swe2:DataRecord definition="http://mmisw.org/ont/ioos/swe_element_type/stations">
+              <swe2:field name="nanoos_psi_baycenter">
+                <swe2:DataRecord id="nanoos_psi_baycenter_timeseries" definition="http://mmisw.org/ont/ioos/swe_element_type/station">
+                  <swe2:field name="stationID">
+                    <swe2:Text definition="http://mmisw.org/ont/ioos/definition/stationID">
+                      <swe2:value>urn:ioos:station:nanoos:psi_baycenter</swe2:value>
+                    </swe2:Text>
+                  </swe2:field>
+                  <swe2:field name="platformLocation">
+                    <swe2:Vector definition="http://www.opengis.net/def/property/OGC/0/PlatformLocation" referenceFrame="http://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/4326&amp;2=http://www.opengis.net/def/crs/EPSG/0/5829" localFrame="#nanoos_psi_baycenter_frame">
+                      <swe2:coordinate name="latitude">
+                        <swe2:Quantity definition="http://mmisw.org/ont/cf/parameter/latitude" axisID="Lat">
+                          <swe2:uom code="deg"/>
+                          <swe2:value>46.62900161743164</swe2:value>
+                        </swe2:Quantity>
+                      </swe2:coordinate>
+                      <swe2:coordinate name="longitude">
+                        <swe2:Quantity definition="http://mmisw.org/ont/cf/parameter/longitude" axisID="Lon">
+                          <swe2:uom code="deg"/>
+                          <swe2:value>-123.95159912109375</swe2:value>
+                        </swe2:Quantity>
+                      </swe2:coordinate>
+                      <swe2:coordinate name="height">
+                        <swe2:Quantity definition="http://mmisw.org/ont/cf/parameter/height" axisID="Z">
+                          <swe2:uom code="m"/>
+                        </swe2:Quantity>
+                      </swe2:coordinate>
+                    </swe2:Vector>
+                  </swe2:field>
+                  <swe2:field name="sensors">
+                    <swe2:DataRecord definition="http://mmisw.org/ont/ioos/swe_element_type/sensors">
+                      <swe2:field name="nanoos_psi_baycenter_h1_watertemp_1">
+                        <swe2:DataRecord id="nanoos_psi_baycenter_h1_watertemp_1" definition="http://mmisw.org/ont/ioos/swe_element_type/sensor">
+                          <swe2:field name="sensorID">
+                            <swe2:Text definition="http://mmisw.org/ont/ioos/definition/sensorID">
+                              <swe2:value>urn:ioos:sensor:nanoos:psi_baycenter:h1_watertemp_1</swe2:value>
+                            </swe2:Text>
+                          </swe2:field>
+                          <swe2:field name="height">
+                            <swe2:Quantity definition="http://mmisw.org/ont/cf/parameter/height" axisID="Z" referenceFrame="#nanoos_psi_baycenter_frame">
+                              <swe2:uom code="m"/>
+                            </swe2:Quantity>
+                          </swe2:field>
+                          <swe2:field name="profileHeights">
+                            <swe2:DataArray definition="http://mmisw.org/ont/ioos/swe_element_type/profileHeights">
+                              <swe2:elementCount>
+                                <swe2:Count>
+                                  <swe2:value>1</swe2:value>
+                                </swe2:Count>
+                              </swe2:elementCount>
+                              <swe2:elementType name="profileDefinition">
+                                <swe2:DataRecord>
+                                  <swe2:field name="height">
+                                    <swe2:Quantity axisID="Z" definition="http://mmisw.org/ont/cf/parameter/height" referenceFrame="#nanoos_psi_baycenter_h1_watertemp_1_frame">
+                                      <swe2:uom code="m"/>
+                                    </swe2:Quantity>
+                                  </swe2:field>
+                                </swe2:DataRecord>
+                              </swe2:elementType>
+                              <swe2:encoding>
+                                <swe2:TextEncoding decimalSeparator="." tokenSeparator="," blockSeparator="&#10;"/>
+                              </swe2:encoding>
+                              <swe2:values>0.0</swe2:values>
+                            </swe2:DataArray>
+                          </swe2:field>
+                        </swe2:DataRecord>
+                      </swe2:field>
+                    </swe2:DataRecord>
+                  </swe2:field>
+                </swe2:DataRecord>
+              </swe2:field>
+            </swe2:DataRecord>
+          </swe2:field>
+          <swe2:field name="observationData">
+            <swe2:DataArray definition="http://mmisw.org/ont/ioos/swe_element_type/sensorObservationCollection">
+              <swe2:elementCount>
+                <swe2:Count>
+                  <swe2:value>1461</swe2:value>
+                </swe2:Count>
+              </swe2:elementCount>
+              <swe2:elementType name="observations">
+                <swe2:DataRecord definition="http://mmisw.org/ont/ioos/swe_element_type/sensorObservations">
+                  <swe2:field name="time">
+                    <swe2:Time definition="http://www.opengis.net/def/property/OGC/0/SamplingTime">
+                      <swe2:uom xlink:href="http://www.opengis.net/def/uom/ISO-8601/0/Gregorian"/>
+                    </swe2:Time>
+                  </swe2:field>
+                  <swe2:field name="sensor">
+                    <swe2:DataChoice definition="http://mmisw.org/ont/ioos/swe_element_type/sensors">
+                      <swe2:item name="nanoos_psi_baycenter_h1_watertemp_1">
+                        <swe2:DataRecord definition="http://mmisw.org/ont/ioos/swe_element_type/sensor">
+                          <swe2:field name="sea_water_temperature">
+                            <swe2:Quantity definition="http://mmisw.org/ont/cf/parameter/sea_water_temperature">
+                              <swe2:uom xlink:href="urn:ogc:def:uom:udunits:2:degC"/>
+                            </swe2:Quantity>
+                          </swe2:field>
+                        </swe2:DataRecord>
+                      </swe2:item>
+                      <swe2:item name="dummy_item"/>
+                    </swe2:DataChoice>
+                  </swe2:field>
+                </swe2:DataRecord>
+              </swe2:elementType>
+              <swe2:encoding>
+                <swe2:TextEncoding decimalSeparator="." tokenSeparator="," blockSeparator="&#10;"/>
+              </swe2:encoding>
+              <swe2:values>2016-01-03T00:01:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.99
+2016-01-03T00:03:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.99
+2016-01-03T00:05:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.99
+2016-01-03T00:07:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.99
+2016-01-03T00:09:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.98
+2016-01-03T00:11:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.97
+2016-01-03T00:13:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.97
+2016-01-03T00:15:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.95
+2016-01-03T00:17:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.95
+2016-01-03T00:19:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.94
+2016-01-03T00:21:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.92
+2016-01-03T00:23:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.93
+2016-01-03T00:25:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.93
+2016-01-03T00:27:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.93
+2016-01-03T00:29:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.93
+2016-01-03T00:31:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.93
+2016-01-03T00:33:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.92
+2016-01-03T00:35:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.92
+2016-01-03T00:37:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.92
+2016-01-03T00:39:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.89
+2016-01-03T00:41:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.89
+2016-01-03T00:43:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.89
+2016-01-03T00:45:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.89
+2016-01-03T00:47:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.90
+2016-01-03T00:49:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.83
+2016-01-03T00:51:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.82
+2016-01-03T00:53:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.85
+2016-01-03T00:55:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.85
+2016-01-03T00:57:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.86
+2016-01-03T00:58:51.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.88
+2016-01-03T00:59:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.88
+2016-01-03T01:01:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.90
+2016-01-03T01:03:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.91
+2016-01-03T01:05:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.91
+2016-01-03T01:07:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.90
+2016-01-03T01:09:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.89
+2016-01-03T01:11:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.87
+2016-01-03T01:13:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.89
+2016-01-03T01:15:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.92
+2016-01-03T01:17:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.95
+2016-01-03T01:19:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.00
+2016-01-03T01:21:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.02
+2016-01-03T01:23:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.03
+2016-01-03T01:25:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.08
+2016-01-03T01:27:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.08
+2016-01-03T01:29:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.08
+2016-01-03T01:31:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.08
+2016-01-03T01:33:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.11
+2016-01-03T01:35:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.09
+2016-01-03T01:37:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.10
+2016-01-03T01:39:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.13
+2016-01-03T01:41:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.10
+2016-01-03T01:43:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.14
+2016-01-03T01:45:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.16
+2016-01-03T01:47:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.18
+2016-01-03T01:49:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.15
+2016-01-03T01:51:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.16
+2016-01-03T01:53:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.18
+2016-01-03T01:55:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.20
+2016-01-03T01:57:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.22
+2016-01-03T01:58:51.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.25
+2016-01-03T01:59:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.24
+2016-01-03T02:01:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.23
+2016-01-03T02:03:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.24
+2016-01-03T02:05:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.22
+2016-01-03T02:07:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.25
+2016-01-03T02:09:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.26
+2016-01-03T02:11:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.26
+2016-01-03T02:13:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.27
+2016-01-03T02:15:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.27
+2016-01-03T02:17:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.28
+2016-01-03T02:19:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.28
+2016-01-03T02:21:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.29
+2016-01-03T02:23:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.30
+2016-01-03T02:25:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.30
+2016-01-03T02:27:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.31
+2016-01-03T02:29:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.30
+2016-01-03T02:31:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.30
+2016-01-03T02:33:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.28
+2016-01-03T02:35:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.29
+2016-01-03T02:37:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.28
+2016-01-03T02:39:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.26
+2016-01-03T02:41:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.21
+2016-01-03T02:43:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.24
+2016-01-03T02:45:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.26
+2016-01-03T02:47:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.25
+2016-01-03T02:49:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.29
+2016-01-03T02:51:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.29
+2016-01-03T02:53:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.27
+2016-01-03T02:55:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.26
+2016-01-03T02:57:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.23
+2016-01-03T02:58:51.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.26
+2016-01-03T02:59:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.26
+2016-01-03T03:01:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.27
+2016-01-03T03:03:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.29
+2016-01-03T03:05:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.29
+2016-01-03T03:07:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.30
+2016-01-03T03:09:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.28
+2016-01-03T03:11:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.30
+2016-01-03T03:13:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.32
+2016-01-03T03:15:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.32
+2016-01-03T03:17:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.31
+2016-01-03T03:19:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.29
+2016-01-03T03:21:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.12
+2016-01-03T03:23:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.26
+2016-01-03T03:25:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.30
+2016-01-03T03:27:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.30
+2016-01-03T03:29:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.27
+2016-01-03T03:31:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.08
+2016-01-03T03:33:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.05
+2016-01-03T03:35:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.13
+2016-01-03T03:37:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.19
+2016-01-03T03:39:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.22
+2016-01-03T03:41:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.18
+2016-01-03T03:43:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.22
+2016-01-03T03:45:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.25
+2016-01-03T03:47:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.93
+2016-01-03T03:49:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.86
+2016-01-03T03:51:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.23
+2016-01-03T03:53:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.28
+2016-01-03T03:55:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.30
+2016-01-03T03:57:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.29
+2016-01-03T03:58:51.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.92
+2016-01-03T03:59:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.85
+2016-01-03T04:01:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.80
+2016-01-03T04:03:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.88
+2016-01-03T04:05:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.80
+2016-01-03T04:07:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.00
+2016-01-03T04:09:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.12
+2016-01-03T04:11:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.16
+2016-01-03T04:13:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.16
+2016-01-03T04:15:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.70
+2016-01-03T04:17:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.79
+2016-01-03T04:19:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.92
+2016-01-03T04:21:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.00
+2016-01-03T04:23:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.03
+2016-01-03T04:25:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.05
+2016-01-03T04:27:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.08
+2016-01-03T04:29:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.81
+2016-01-03T04:31:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.02
+2016-01-03T04:33:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.96
+2016-01-03T04:35:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.68
+2016-01-03T04:37:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.73
+2016-01-03T04:39:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.81
+2016-01-03T04:41:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.92
+2016-01-03T04:43:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.81
+2016-01-03T04:45:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.88
+2016-01-03T04:47:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.82
+2016-01-03T04:49:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.86
+2016-01-03T04:51:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.87
+2016-01-03T04:53:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.65
+2016-01-03T04:55:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.76
+2016-01-03T04:57:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.80
+2016-01-03T04:58:51.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.83
+2016-01-03T05:39:36.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.38
+2016-01-03T05:41:36.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.39
+2016-01-03T05:43:36.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.45
+2016-01-03T05:45:36.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.54
+2016-01-03T05:47:36.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.64
+2016-01-03T05:49:36.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.52
+2016-01-03T05:51:36.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.52
+2016-01-03T05:53:36.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.39
+2016-01-03T05:55:36.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.22
+2016-01-03T05:57:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.31
+2016-01-03T05:57:36.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.41
+2016-01-03T05:58:51.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.57
+2016-01-03T05:59:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.60
+2016-01-03T06:01:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.71
+2016-01-03T06:03:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.78
+2016-01-03T06:05:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.81
+2016-01-03T06:07:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.68
+2016-01-03T06:09:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.06
+2016-01-03T06:11:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,3.90
+2016-01-03T06:13:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.19
+2016-01-03T06:15:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.73
+2016-01-03T06:17:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.78
+2016-01-03T06:19:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.58
+2016-01-03T06:21:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.25
+2016-01-03T06:23:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,3.93
+2016-01-03T06:25:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.10
+2016-01-03T06:27:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.39
+2016-01-03T06:29:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.64
+2016-01-03T06:31:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.71
+2016-01-03T06:33:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.45
+2016-01-03T06:35:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.47
+2016-01-03T06:37:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.59
+2016-01-03T06:39:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.49
+2016-01-03T06:41:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.50
+2016-01-03T06:43:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.70
+2016-01-03T06:45:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.57
+2016-01-03T06:47:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.53
+2016-01-03T06:49:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.67
+2016-01-03T06:51:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.57
+2016-01-03T06:53:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.62
+2016-01-03T06:55:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.67
+2016-01-03T06:57:06.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.66
+2016-01-03T06:58:52.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.68
+2016-01-03T06:59:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.67
+2016-01-03T07:01:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.72
+2016-01-03T07:03:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.60
+2016-01-03T07:05:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.65
+2016-01-03T07:07:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.71
+2016-01-03T07:09:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.70
+2016-01-03T07:11:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.72
+2016-01-03T07:13:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.77
+2016-01-03T07:15:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.75
+2016-01-03T07:17:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.75
+2016-01-03T07:19:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.73
+2016-01-03T07:21:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.74
+2016-01-03T07:23:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.72
+2016-01-03T07:25:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.70
+2016-01-03T07:27:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.74
+2016-01-03T07:29:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.76
+2016-01-03T07:31:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.72
+2016-01-03T07:33:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.72
+2016-01-03T07:35:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.70
+2016-01-03T07:37:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.64
+2016-01-03T07:39:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.63
+2016-01-03T07:41:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.63
+2016-01-03T07:43:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.63
+2016-01-03T07:45:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.61
+2016-01-03T07:47:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.62
+2016-01-03T07:49:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.60
+2016-01-03T07:51:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.57
+2016-01-03T07:53:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.55
+2016-01-03T07:55:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.50
+2016-01-03T07:57:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.50
+2016-01-03T07:58:52.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.52
+2016-01-04T05:39:52.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.28
+2016-01-04T05:41:52.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.16
+2016-01-04T05:43:52.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.13
+2016-01-04T05:45:52.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.23
+2016-01-04T05:47:52.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.30
+2016-01-04T05:49:52.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.24
+2016-01-04T05:51:52.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.18
+2016-01-04T05:53:52.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.18
+2016-01-04T05:55:52.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.17
+2016-01-04T05:57:52.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.10
+2016-01-04T05:58:52.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.11
+2016-01-04T05:59:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.12
+2016-01-04T06:01:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.13
+2016-01-04T06:03:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.18
+2016-01-04T06:05:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.16
+2016-01-04T06:07:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.16
+2016-01-04T06:09:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.11
+2016-01-04T06:11:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.09
+2016-01-04T06:13:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.06
+2016-01-04T06:15:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.05
+2016-01-04T06:17:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.04
+2016-01-04T06:19:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.03
+2016-01-04T06:21:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.02
+2016-01-04T06:23:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.02
+2016-01-04T06:25:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.01
+2016-01-04T06:27:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,3.98
+2016-01-04T06:29:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,3.96
+2016-01-04T06:31:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.00
+2016-01-04T06:33:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.00
+2016-01-04T06:35:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,3.97
+2016-01-04T06:37:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,3.94
+2016-01-04T06:39:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,3.95
+2016-01-04T06:41:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,3.94
+2016-01-04T06:43:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,3.94
+2016-01-04T06:45:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,3.95
+2016-01-04T06:47:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,3.95
+2016-01-04T06:49:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,3.95
+2016-01-04T06:51:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,3.96
+2016-01-04T06:53:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,3.98
+2016-01-04T06:55:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,3.97
+2016-01-04T06:57:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,3.96
+2016-01-04T06:58:52.000Z,nanoos_psi_baycenter_h1_watertemp_1,3.96
+2016-01-04T06:59:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,3.96
+2016-01-04T07:01:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,3.96
+2016-01-04T07:03:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,3.96
+2016-01-04T07:05:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,3.98
+2016-01-04T07:07:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,3.99
+2016-01-04T07:09:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.00
+2016-01-04T07:11:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,3.98
+2016-01-04T07:13:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,3.97
+2016-01-04T07:15:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,3.96
+2016-01-04T07:17:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,3.97
+2016-01-04T07:19:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.00
+2016-01-04T07:21:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,3.98
+2016-01-04T07:23:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,3.98
+2016-01-04T07:25:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.02
+2016-01-04T07:27:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,3.99
+2016-01-04T07:29:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,3.97
+2016-01-04T07:31:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,3.93
+2016-01-04T07:33:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,3.97
+2016-01-04T07:35:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.00
+2016-01-04T07:37:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,3.99
+2016-01-04T07:39:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,3.99
+2016-01-04T07:41:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.01
+2016-01-04T07:43:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,3.99
+2016-01-04T07:45:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,3.97
+2016-01-04T07:47:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.02
+2016-01-04T07:49:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.10
+2016-01-04T07:51:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.08
+2016-01-04T07:53:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.03
+2016-01-04T07:55:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.05
+2016-01-04T07:57:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.06
+2016-01-04T07:58:52.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.08
+2016-01-04T07:59:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.10
+2016-01-04T08:01:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.10
+2016-01-04T08:03:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.11
+2016-01-04T08:05:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.12
+2016-01-04T08:07:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.16
+2016-01-04T08:09:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.19
+2016-01-04T08:11:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.15
+2016-01-04T08:13:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.12
+2016-01-04T08:15:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.15
+2016-01-04T08:17:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.16
+2016-01-04T08:19:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.13
+2016-01-04T08:21:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.19
+2016-01-04T08:23:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.20
+2016-01-04T08:25:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.12
+2016-01-04T08:27:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.06
+2016-01-04T08:29:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.00
+2016-01-04T08:31:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.02
+2016-01-04T08:33:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,3.99
+2016-01-04T08:35:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.05
+2016-01-04T08:37:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.13
+2016-01-04T08:39:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.04
+2016-01-04T08:41:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,3.99
+2016-01-04T08:43:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.01
+2016-01-04T08:45:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.04
+2016-01-04T08:47:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,3.97
+2016-01-04T08:49:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,3.95
+2016-01-04T08:51:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,3.94
+2016-01-04T08:53:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,3.94
+2016-01-04T08:55:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,3.94
+2016-01-04T08:57:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,3.93
+2016-01-04T08:58:52.000Z,nanoos_psi_baycenter_h1_watertemp_1,3.93
+2016-01-04T08:59:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,3.95
+2016-01-04T09:01:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,3.96
+2016-01-04T09:03:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,3.96
+2016-01-04T09:05:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,3.96
+2016-01-04T09:07:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,3.95
+2016-01-04T09:09:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,3.95
+2016-01-04T09:11:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,3.93
+2016-01-04T09:13:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,3.92
+2016-01-04T09:15:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,3.92
+2016-01-04T09:17:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,3.89
+2016-01-04T09:19:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,3.89
+2016-01-04T09:21:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,3.89
+2016-01-04T09:23:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,3.88
+2016-01-04T09:25:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,3.89
+2016-01-04T09:27:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,3.90
+2016-01-04T09:29:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,3.90
+2016-01-04T09:31:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,3.91
+2016-01-04T09:33:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,3.91
+2016-01-04T09:35:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,3.91
+2016-01-04T09:37:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,3.89
+2016-01-04T09:39:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,3.90
+2016-01-04T09:41:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,3.90
+2016-01-04T09:43:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,3.90
+2016-01-04T09:45:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,3.91
+2016-01-04T09:47:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,3.91
+2016-01-04T09:49:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,3.91
+2016-01-04T09:51:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,3.92
+2016-01-04T09:53:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,3.91
+2016-01-04T09:55:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,3.91
+2016-01-04T09:57:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,3.90
+2016-01-04T09:58:52.000Z,nanoos_psi_baycenter_h1_watertemp_1,3.90
+2016-01-04T09:59:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,3.90
+2016-01-04T10:01:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,3.90
+2016-01-04T10:03:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,3.90
+2016-01-04T10:05:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,3.90
+2016-01-04T10:07:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,3.91
+2016-01-04T10:09:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,3.91
+2016-01-04T10:11:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,3.91
+2016-01-04T10:13:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,3.90
+2016-01-04T10:15:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,3.91
+2016-01-04T10:17:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,3.90
+2016-01-04T10:19:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,3.89
+2016-01-04T10:21:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,3.89
+2016-01-04T10:23:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,3.89
+2016-01-04T10:25:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,3.89
+2016-01-04T10:27:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,3.89
+2016-01-04T10:29:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,3.89
+2016-01-04T10:31:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,3.90
+2016-01-04T10:33:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,3.90
+2016-01-04T10:35:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,3.90
+2016-01-04T10:37:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,3.90
+2016-01-04T10:39:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,3.90
+2016-01-04T10:41:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,3.91
+2016-01-04T10:43:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,3.91
+2016-01-04T10:45:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,3.92
+2016-01-04T10:47:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,3.92
+2016-01-04T10:49:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,3.93
+2016-01-04T10:51:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,3.93
+2016-01-04T10:53:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,3.93
+2016-01-04T10:55:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,3.93
+2016-01-04T10:57:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,3.93
+2016-01-04T10:58:52.000Z,nanoos_psi_baycenter_h1_watertemp_1,3.93
+2016-01-04T10:59:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,3.93
+2016-01-04T11:01:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,3.93
+2016-01-04T11:03:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,3.93
+2016-01-04T11:05:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,3.93
+2016-01-04T11:07:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,3.94
+2016-01-04T11:09:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,3.94
+2016-01-04T11:11:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,3.94
+2016-01-04T11:13:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,3.94
+2016-01-04T11:15:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,3.94
+2016-01-04T11:17:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,3.94
+2016-01-04T11:19:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,3.94
+2016-01-04T11:21:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,3.94
+2016-01-04T11:23:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,3.93
+2016-01-04T11:25:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,3.93
+2016-01-04T11:27:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,3.93
+2016-01-04T11:29:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,3.94
+2016-01-04T11:31:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,3.94
+2016-01-04T11:33:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,3.94
+2016-01-04T11:35:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,3.94
+2016-01-04T11:37:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,3.94
+2016-01-04T11:39:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,3.94
+2016-01-04T11:41:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,3.94
+2016-01-04T11:43:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,3.95
+2016-01-04T11:45:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,3.95
+2016-01-04T11:47:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,3.95
+2016-01-04T11:49:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,3.94
+2016-01-04T11:51:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,3.95
+2016-01-04T11:53:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,3.95
+2016-01-04T11:55:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,3.91
+2016-01-04T11:57:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,3.90
+2016-01-04T11:58:52.000Z,nanoos_psi_baycenter_h1_watertemp_1,3.92
+2016-01-04T11:59:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,3.92
+2016-01-04T12:01:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.01
+2016-01-04T12:03:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.03
+2016-01-04T12:05:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.04
+2016-01-04T12:07:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.04
+2016-01-04T12:09:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.01
+2016-01-04T12:11:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.01
+2016-01-04T12:13:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.02
+2016-01-04T12:15:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.04
+2016-01-04T12:17:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.01
+2016-01-04T12:19:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.01
+2016-01-04T12:21:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.04
+2016-01-04T12:23:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.02
+2016-01-04T12:25:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.01
+2016-01-04T12:27:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.01
+2016-01-04T12:29:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.01
+2016-01-04T12:31:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,3.97
+2016-01-04T12:33:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,3.97
+2016-01-04T12:35:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,3.99
+2016-01-04T12:37:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.03
+2016-01-04T12:39:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.05
+2016-01-04T12:41:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.05
+2016-01-04T12:43:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.05
+2016-01-04T12:45:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.05
+2016-01-04T12:47:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.04
+2016-01-04T12:49:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.03
+2016-01-04T12:51:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.03
+2016-01-04T12:53:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.03
+2016-01-04T12:55:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.03
+2016-01-04T12:57:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.03
+2016-01-04T12:58:52.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.03
+2016-01-04T12:59:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.03
+2016-01-04T13:01:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.03
+2016-01-04T13:03:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.03
+2016-01-04T13:05:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.03
+2016-01-04T13:07:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.02
+2016-01-04T13:09:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.05
+2016-01-04T13:11:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.10
+2016-01-04T13:13:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.16
+2016-01-04T13:15:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.17
+2016-01-04T13:17:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.18
+2016-01-04T13:19:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.19
+2016-01-04T13:21:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.23
+2016-01-04T13:23:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.29
+2016-01-04T13:25:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.41
+2016-01-04T13:27:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.54
+2016-01-04T13:29:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.67
+2016-01-04T13:31:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.74
+2016-01-04T13:33:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.77
+2016-01-04T13:35:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.80
+2016-01-04T13:37:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.81
+2016-01-04T13:39:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.80
+2016-01-04T13:41:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.73
+2016-01-04T13:43:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.69
+2016-01-04T13:45:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.38
+2016-01-04T13:47:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.60
+2016-01-04T13:49:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.61
+2016-01-04T13:51:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.56
+2016-01-04T13:53:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.55
+2016-01-04T13:55:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.50
+2016-01-04T13:57:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.56
+2016-01-04T13:58:52.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.62
+2016-01-04T13:59:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.62
+2016-01-04T14:01:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.53
+2016-01-04T14:03:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.31
+2016-01-04T14:05:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.34
+2016-01-04T14:07:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.28
+2016-01-04T14:09:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.35
+2016-01-04T14:11:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.24
+2016-01-04T14:13:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.27
+2016-01-04T14:15:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.22
+2016-01-04T14:17:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.19
+2016-01-04T14:19:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.21
+2016-01-04T14:21:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.24
+2016-01-04T14:23:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.26
+2016-01-04T14:25:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.27
+2016-01-04T14:27:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.29
+2016-01-04T14:29:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.31
+2016-01-04T14:31:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.39
+2016-01-04T14:33:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.41
+2016-01-04T14:35:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.35
+2016-01-04T14:37:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.35
+2016-01-04T14:39:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.38
+2016-01-04T14:41:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.40
+2016-01-04T14:43:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.44
+2016-01-04T14:45:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.46
+2016-01-04T14:47:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.48
+2016-01-04T14:49:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.50
+2016-01-04T14:51:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.45
+2016-01-04T14:53:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.48
+2016-01-04T14:55:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.47
+2016-01-04T14:57:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.49
+2016-01-04T14:58:52.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.46
+2016-01-04T14:59:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.47
+2016-01-04T15:01:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.51
+2016-01-04T15:03:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.49
+2016-01-04T15:05:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.47
+2016-01-04T15:07:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.48
+2016-01-04T15:09:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.48
+2016-01-04T15:11:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.48
+2016-01-04T15:13:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.46
+2016-01-04T15:15:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.51
+2016-01-04T15:17:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.49
+2016-01-04T15:19:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.55
+2016-01-04T15:21:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.54
+2016-01-04T15:23:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.59
+2016-01-04T15:25:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.61
+2016-01-04T15:27:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.71
+2016-01-04T15:29:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.66
+2016-01-04T15:31:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.67
+2016-01-04T15:33:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.68
+2016-01-04T15:35:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.81
+2016-01-04T15:37:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.77
+2016-01-04T15:39:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.79
+2016-01-04T15:41:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.75
+2016-01-04T15:43:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.75
+2016-01-04T15:45:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.79
+2016-01-04T15:47:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.69
+2016-01-04T15:49:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.69
+2016-01-04T15:51:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.49
+2016-01-04T15:53:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.50
+2016-01-04T15:55:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.59
+2016-01-04T15:57:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.66
+2016-01-04T15:58:52.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.72
+2016-01-04T15:59:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.72
+2016-01-04T16:01:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.56
+2016-01-04T16:03:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.68
+2016-01-04T16:05:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.67
+2016-01-04T16:07:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.74
+2016-01-04T16:09:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.78
+2016-01-04T16:11:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.76
+2016-01-04T16:13:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.75
+2016-01-04T16:15:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.80
+2016-01-04T16:17:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.67
+2016-01-04T16:19:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.67
+2016-01-04T16:21:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.71
+2016-01-04T16:23:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.55
+2016-01-04T16:25:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.44
+2016-01-04T16:27:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.51
+2016-01-04T16:29:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.55
+2016-01-04T16:31:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.66
+2016-01-04T16:33:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.38
+2016-01-04T16:35:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.45
+2016-01-04T16:37:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.51
+2016-01-04T16:39:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.61
+2016-01-04T16:41:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.35
+2016-01-04T16:43:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.81
+2016-01-04T16:45:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.42
+2016-01-04T16:47:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.72
+2016-01-04T16:49:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.45
+2016-01-04T16:51:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.53
+2016-01-04T16:53:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.56
+2016-01-04T16:55:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.53
+2016-01-04T16:57:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.37
+2016-01-04T16:58:52.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.38
+2016-01-04T16:59:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.39
+2016-01-04T17:01:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.42
+2016-01-04T17:03:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.44
+2016-01-04T17:05:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.34
+2016-01-04T17:07:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.32
+2016-01-04T17:09:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.42
+2016-01-04T17:11:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.50
+2016-01-04T17:13:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.35
+2016-01-04T17:15:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.30
+2016-01-04T17:17:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.48
+2016-01-04T17:19:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.43
+2016-01-04T17:21:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.31
+2016-01-04T17:23:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.36
+2016-01-04T17:25:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.62
+2016-01-04T17:27:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.46
+2016-01-04T17:29:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.48
+2016-01-04T17:31:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.43
+2016-01-04T17:33:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.39
+2016-01-04T17:35:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.52
+2016-01-04T17:37:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.51
+2016-01-04T17:39:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.58
+2016-01-04T17:41:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.41
+2016-01-04T17:43:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.44
+2016-01-04T17:45:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.32
+2016-01-04T17:47:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.38
+2016-01-04T17:49:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.45
+2016-01-04T17:51:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.53
+2016-01-04T17:53:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.50
+2016-01-04T17:55:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.32
+2016-01-04T17:57:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.37
+2016-01-04T17:58:52.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.36
+2016-01-04T17:59:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.36
+2016-01-04T18:01:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.46
+2016-01-04T18:03:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.44
+2016-01-04T18:05:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.40
+2016-01-04T18:07:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.51
+2016-01-04T18:09:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.45
+2016-01-04T18:11:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.42
+2016-01-04T18:13:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.30
+2016-01-04T18:15:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.31
+2016-01-04T18:17:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.33
+2016-01-04T18:19:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.35
+2016-01-04T18:21:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.32
+2016-01-04T18:23:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.28
+2016-01-04T18:25:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.23
+2016-01-04T18:27:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.22
+2016-01-04T18:29:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.23
+2016-01-04T18:31:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.25
+2016-01-04T18:33:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.29
+2016-01-04T18:35:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.32
+2016-01-04T18:37:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.27
+2016-01-04T18:39:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.26
+2016-01-04T18:41:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.24
+2016-01-04T18:43:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.24
+2016-01-04T18:45:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.22
+2016-01-04T18:47:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.20
+2016-01-04T18:49:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.23
+2016-01-04T18:51:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.23
+2016-01-04T18:53:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.22
+2016-01-04T18:55:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.21
+2016-01-04T18:57:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.22
+2016-01-04T18:58:52.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.22
+2016-01-04T18:59:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.22
+2016-01-04T19:01:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.24
+2016-01-04T19:03:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.25
+2016-01-04T19:05:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.24
+2016-01-04T19:07:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.24
+2016-01-04T19:09:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.24
+2016-01-04T19:11:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.25
+2016-01-04T19:13:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.26
+2016-01-04T19:15:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.31
+2016-01-04T19:17:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.59
+2016-01-04T19:19:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.42
+2016-01-04T19:21:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.55
+2016-01-04T19:23:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.48
+2016-01-04T19:25:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.43
+2016-01-04T19:27:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.39
+2016-01-04T19:29:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.38
+2016-01-04T19:31:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.33
+2016-01-04T19:33:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.35
+2016-01-04T19:35:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.34
+2016-01-04T19:37:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.35
+2016-01-04T19:39:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.36
+2016-01-04T19:41:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.35
+2016-01-04T19:43:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.36
+2016-01-04T19:45:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.39
+2016-01-04T19:47:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.39
+2016-01-04T19:49:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.39
+2016-01-04T19:51:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.40
+2016-01-04T19:53:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.42
+2016-01-04T19:55:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.42
+2016-01-04T19:57:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.41
+2016-01-04T19:58:52.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.41
+2016-01-04T19:59:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.41
+2016-01-04T20:01:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.42
+2016-01-04T20:03:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.41
+2016-01-04T20:05:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.41
+2016-01-04T20:07:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.47
+2016-01-04T20:09:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.47
+2016-01-04T20:11:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.45
+2016-01-04T20:13:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.45
+2016-01-04T20:15:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.46
+2016-01-04T20:17:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.51
+2016-01-04T20:19:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.50
+2016-01-04T20:21:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.49
+2016-01-04T20:23:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.47
+2016-01-04T20:25:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.46
+2016-01-04T20:27:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.46
+2016-01-04T20:29:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.50
+2016-01-04T20:31:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.50
+2016-01-04T20:33:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.52
+2016-01-04T20:35:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.51
+2016-01-04T20:37:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.50
+2016-01-04T20:39:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.50
+2016-01-04T20:41:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.55
+2016-01-04T20:43:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.51
+2016-01-04T20:45:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.50
+2016-01-04T20:47:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.51
+2016-01-04T20:49:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.55
+2016-01-04T20:51:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.56
+2016-01-04T20:53:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.55
+2016-01-04T20:55:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.56
+2016-01-04T20:57:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.56
+2016-01-04T20:58:52.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.55
+2016-01-04T20:59:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.55
+2016-01-04T21:01:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.57
+2016-01-04T21:03:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.63
+2016-01-04T21:05:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.65
+2016-01-04T21:07:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.57
+2016-01-04T21:09:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.57
+2016-01-04T21:11:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.62
+2016-01-04T21:13:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.57
+2016-01-04T21:15:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.58
+2016-01-04T21:17:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.62
+2016-01-04T21:19:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.64
+2016-01-04T21:21:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.64
+2016-01-04T21:23:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.65
+2016-01-04T21:25:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.67
+2016-01-04T21:27:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.69
+2016-01-04T21:29:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.69
+2016-01-04T21:31:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.70
+2016-01-04T21:33:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.73
+2016-01-04T21:35:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.75
+2016-01-04T21:37:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.76
+2016-01-04T21:39:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.77
+2016-01-04T21:41:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.78
+2016-01-04T21:43:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.79
+2016-01-04T21:45:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.80
+2016-01-04T21:47:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.81
+2016-01-04T21:49:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.80
+2016-01-04T21:51:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.90
+2016-01-04T21:53:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.92
+2016-01-04T21:55:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.91
+2016-01-04T21:57:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.91
+2016-01-04T21:58:52.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.92
+2016-01-04T21:59:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.94
+2016-01-04T22:01:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.00
+2016-01-04T22:03:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.98
+2016-01-04T22:05:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.00
+2016-01-04T22:07:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,4.97
+2016-01-04T22:09:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.05
+2016-01-04T22:11:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.09
+2016-01-04T22:13:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.08
+2016-01-04T22:15:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.05
+2016-01-04T22:17:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.03
+2016-01-04T22:19:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.03
+2016-01-04T22:21:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.12
+2016-01-04T22:23:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.18
+2016-01-04T22:25:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.14
+2016-01-04T22:27:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.15
+2016-01-04T22:29:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.17
+2016-01-04T22:31:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.14
+2016-01-04T22:33:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.18
+2016-01-04T22:35:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.15
+2016-01-04T22:37:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.19
+2016-01-04T22:39:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.17
+2016-01-04T22:41:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.11
+2016-01-04T22:43:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.13
+2016-01-04T22:45:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.13
+2016-01-04T22:47:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.17
+2016-01-04T22:49:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.14
+2016-01-04T22:51:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.15
+2016-01-04T22:53:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.14
+2016-01-04T22:55:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.14
+2016-01-04T22:57:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.13
+2016-01-04T22:58:52.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.18
+2016-01-04T22:59:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.18
+2016-01-04T23:01:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.16
+2016-01-04T23:03:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.21
+2016-01-04T23:05:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.20
+2016-01-04T23:07:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.09
+2016-01-04T23:09:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.05
+2016-01-04T23:11:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.20
+2016-01-04T23:13:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.27
+2016-01-04T23:15:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.25
+2016-01-04T23:17:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.27
+2016-01-04T23:19:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.27
+2016-01-04T23:21:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.28
+2016-01-04T23:23:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.28
+2016-01-04T23:25:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.28
+2016-01-04T23:27:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.29
+2016-01-04T23:29:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.29
+2016-01-04T23:31:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.29
+2016-01-04T23:33:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.30
+2016-01-04T23:35:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.29
+2016-01-04T23:37:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.26
+2016-01-04T23:39:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.23
+2016-01-04T23:41:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.23
+2016-01-04T23:43:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.22
+2016-01-04T23:45:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.22
+2016-01-04T23:47:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.23
+2016-01-04T23:49:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.25
+2016-01-04T23:51:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.25
+2016-01-04T23:53:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.24
+2016-01-04T23:55:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.24
+2016-01-04T23:57:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.25
+2016-01-04T23:58:52.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.25
+2016-01-04T23:59:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.25
+2016-01-05T00:01:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.23
+2016-01-05T00:03:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.21
+2016-01-05T00:05:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.21
+2016-01-05T00:07:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.21
+2016-01-05T00:09:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.19
+2016-01-05T00:11:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.19
+2016-01-05T00:13:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.18
+2016-01-05T00:15:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.18
+2016-01-05T00:17:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.19
+2016-01-05T00:19:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.19
+2016-01-05T00:21:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.21
+2016-01-05T00:23:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.19
+2016-01-05T00:25:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.20
+2016-01-05T00:27:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.19
+2016-01-05T00:29:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.17
+2016-01-05T00:31:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.18
+2016-01-05T00:33:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.18
+2016-01-05T00:35:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.16
+2016-01-05T00:37:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.15
+2016-01-05T00:39:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.15
+2016-01-05T00:41:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.15
+2016-01-05T00:43:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.15
+2016-01-05T00:45:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.15
+2016-01-05T00:47:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.17
+2016-01-05T00:49:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.19
+2016-01-05T00:51:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.19
+2016-01-05T00:53:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.20
+2016-01-05T00:55:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.21
+2016-01-05T00:57:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.20
+2016-01-05T00:58:52.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.20
+2016-01-05T00:59:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.20
+2016-01-05T01:01:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.20
+2016-01-05T01:03:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.19
+2016-01-05T01:05:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.20
+2016-01-05T01:07:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.20
+2016-01-05T01:09:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.20
+2016-01-05T01:11:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.20
+2016-01-05T01:13:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.20
+2016-01-05T01:15:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.21
+2016-01-05T01:17:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.20
+2016-01-05T01:19:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.20
+2016-01-05T01:21:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.21
+2016-01-05T01:23:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.22
+2016-01-05T01:25:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.23
+2016-01-05T01:27:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.23
+2016-01-05T01:29:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.23
+2016-01-05T01:31:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.24
+2016-01-05T01:33:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.22
+2016-01-05T01:35:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.24
+2016-01-05T01:37:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.24
+2016-01-05T01:39:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.26
+2016-01-05T01:41:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.26
+2016-01-05T01:43:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.24
+2016-01-05T01:45:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.24
+2016-01-05T01:47:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.25
+2016-01-05T01:49:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.26
+2016-01-05T01:51:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.25
+2016-01-05T01:53:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.27
+2016-01-05T01:55:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.27
+2016-01-05T01:57:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.26
+2016-01-05T01:58:52.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.26
+2016-01-05T01:59:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.26
+2016-01-05T02:01:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.27
+2016-01-05T02:03:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.32
+2016-01-05T02:05:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.33
+2016-01-05T02:07:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.32
+2016-01-05T02:09:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.33
+2016-01-05T02:11:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.34
+2016-01-05T02:13:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.34
+2016-01-05T02:15:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.34
+2016-01-05T02:17:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.34
+2016-01-05T02:19:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.34
+2016-01-05T02:21:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.34
+2016-01-05T02:23:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.34
+2016-01-05T02:25:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.34
+2016-01-05T02:27:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.34
+2016-01-05T02:29:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.34
+2016-01-05T02:31:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.35
+2016-01-05T02:33:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.35
+2016-01-05T02:35:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.35
+2016-01-05T02:37:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.35
+2016-01-05T02:39:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.34
+2016-01-05T02:41:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.33
+2016-01-05T02:43:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.34
+2016-01-05T02:45:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.33
+2016-01-05T02:47:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.34
+2016-01-05T02:49:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.34
+2016-01-05T02:51:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.33
+2016-01-05T02:53:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.33
+2016-01-05T02:55:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.33
+2016-01-05T02:57:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.33
+2016-01-05T02:58:52.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.34
+2016-01-05T02:59:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.34
+2016-01-05T03:01:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.34
+2016-01-05T03:03:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.34
+2016-01-05T03:05:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.34
+2016-01-05T03:07:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.34
+2016-01-05T03:09:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.34
+2016-01-05T03:11:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.34
+2016-01-05T03:13:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.34
+2016-01-05T03:15:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.34
+2016-01-05T03:17:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.34
+2016-01-05T03:19:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.33
+2016-01-05T03:21:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.33
+2016-01-05T03:23:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.33
+2016-01-05T03:25:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.33
+2016-01-05T03:27:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.33
+2016-01-05T03:29:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.33
+2016-01-05T03:31:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.33
+2016-01-05T03:33:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.33
+2016-01-05T03:35:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.33
+2016-01-05T03:37:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.33
+2016-01-05T03:39:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.33
+2016-01-05T03:41:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.32
+2016-01-05T03:43:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.32
+2016-01-05T03:45:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.33
+2016-01-05T03:47:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.33
+2016-01-05T03:49:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.32
+2016-01-05T03:51:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.32
+2016-01-05T03:53:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.32
+2016-01-05T03:55:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.32
+2016-01-05T03:57:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.31
+2016-01-05T03:58:52.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.31
+2016-01-05T03:59:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.31
+2016-01-05T04:01:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.31
+2016-01-05T04:03:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.31
+2016-01-05T04:05:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.30
+2016-01-05T04:07:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.29
+2016-01-05T04:09:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.29
+2016-01-05T04:11:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.29
+2016-01-05T04:13:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.30
+2016-01-05T04:15:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.30
+2016-01-05T04:17:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.30
+2016-01-05T04:19:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.30
+2016-01-05T04:21:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.28
+2016-01-05T04:23:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.26
+2016-01-05T04:25:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.26
+2016-01-05T04:27:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.25
+2016-01-05T04:29:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.26
+2016-01-05T04:31:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.25
+2016-01-05T04:33:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.23
+2016-01-05T04:35:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.23
+2016-01-05T04:37:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.22
+2016-01-05T04:39:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.22
+2016-01-05T04:41:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.22
+2016-01-05T04:43:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.23
+2016-01-05T04:45:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.24
+2016-01-05T04:47:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.24
+2016-01-05T04:49:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.25
+2016-01-05T04:51:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.24
+2016-01-05T04:53:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.23
+2016-01-05T04:55:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.23
+2016-01-05T04:57:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.23
+2016-01-05T04:58:52.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.23
+2016-01-05T05:40:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.27
+2016-01-05T05:42:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.27
+2016-01-05T05:44:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.27
+2016-01-05T05:46:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.27
+2016-01-05T05:48:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.26
+2016-01-05T05:50:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.26
+2016-01-05T05:52:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.26
+2016-01-05T05:54:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.26
+2016-01-05T05:56:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.26
+2016-01-05T05:58:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.26
+2016-01-05T05:58:52.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.26
+2016-01-05T05:59:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.26
+2016-01-05T06:01:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.26
+2016-01-05T06:03:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.26
+2016-01-05T06:05:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.25
+2016-01-05T06:07:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.25
+2016-01-05T06:09:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.24
+2016-01-05T06:11:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.25
+2016-01-05T06:13:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.24
+2016-01-05T06:15:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.25
+2016-01-05T06:17:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.26
+2016-01-05T06:19:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.27
+2016-01-05T06:21:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.26
+2016-01-05T06:23:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.24
+2016-01-05T06:25:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.24
+2016-01-05T06:27:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.23
+2016-01-05T06:29:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.25
+2016-01-05T06:31:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.25
+2016-01-05T06:33:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.24
+2016-01-05T06:35:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.21
+2016-01-05T06:37:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.22
+2016-01-05T06:39:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.23
+2016-01-05T06:41:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.22
+2016-01-05T06:43:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.22
+2016-01-05T06:45:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.23
+2016-01-05T06:47:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.24
+2016-01-05T06:49:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.23
+2016-01-05T06:51:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.21
+2016-01-05T06:53:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.23
+2016-01-05T06:55:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.23
+2016-01-05T06:57:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.26
+2016-01-05T06:58:52.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.24
+2016-01-05T06:59:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.24
+2016-01-05T07:01:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.25
+2016-01-05T07:03:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.25
+2016-01-05T07:05:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.25
+2016-01-05T07:07:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.25
+2016-01-05T07:09:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.24
+2016-01-05T07:11:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.23
+2016-01-05T07:13:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.24
+2016-01-05T07:15:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.24
+2016-01-05T07:17:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.23
+2016-01-05T07:19:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.24
+2016-01-05T07:21:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.24
+2016-01-05T07:23:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.23
+2016-01-05T07:25:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.23
+2016-01-05T07:27:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.23
+2016-01-05T07:29:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.22
+2016-01-05T07:31:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.22
+2016-01-05T07:33:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.23
+2016-01-05T07:35:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.23
+2016-01-05T07:37:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.22
+2016-01-05T07:39:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.21
+2016-01-05T07:41:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.21
+2016-01-05T07:43:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.20
+2016-01-05T07:45:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.20
+2016-01-05T07:47:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.21
+2016-01-05T07:49:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.21
+2016-01-05T07:51:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.21
+2016-01-05T07:53:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.20
+2016-01-05T07:55:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.20
+2016-01-05T07:57:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.19
+2016-01-05T07:58:52.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.19
+2016-01-05T07:59:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.19
+2016-01-05T08:01:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.19
+2016-01-05T08:03:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.19
+2016-01-05T08:05:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.19
+2016-01-05T08:07:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.19
+2016-01-05T08:09:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.19
+2016-01-05T08:11:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.19
+2016-01-05T08:13:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.19
+2016-01-05T08:15:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.18
+2016-01-05T08:17:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.18
+2016-01-05T08:19:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.18
+2016-01-05T08:21:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.18
+2016-01-05T08:23:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.17
+2016-01-05T08:25:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.15
+2016-01-05T08:27:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.15
+2016-01-05T08:29:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.15
+2016-01-05T08:31:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.16
+2016-01-05T08:33:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.15
+2016-01-05T08:35:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.15
+2016-01-05T08:37:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.16
+2016-01-05T08:39:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.16
+2016-01-05T08:41:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.16
+2016-01-05T08:43:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.16
+2016-01-05T08:45:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.15
+2016-01-05T08:47:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.16
+2016-01-05T08:49:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.16
+2016-01-05T08:51:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.17
+2016-01-05T08:53:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.16
+2016-01-05T08:55:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.16
+2016-01-05T08:57:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.16
+2016-01-05T08:58:52.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.16
+2016-01-05T08:59:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.16
+2016-01-05T09:01:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.15
+2016-01-05T09:03:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.16
+2016-01-05T09:05:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.14
+2016-01-05T09:07:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.14
+2016-01-05T09:09:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.15
+2016-01-05T09:11:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.14
+2016-01-05T09:13:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.14
+2016-01-05T09:15:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.14
+2016-01-05T09:17:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.14
+2016-01-05T09:19:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.14
+2016-01-05T09:21:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.14
+2016-01-05T09:23:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.14
+2016-01-05T09:25:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.14
+2016-01-05T09:27:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.13
+2016-01-05T09:29:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.13
+2016-01-05T09:31:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.13
+2016-01-05T09:33:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.13
+2016-01-05T09:35:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.13
+2016-01-05T09:37:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.13
+2016-01-05T09:39:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.12
+2016-01-05T09:41:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.12
+2016-01-05T09:43:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.12
+2016-01-05T09:45:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.13
+2016-01-05T09:47:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.12
+2016-01-05T09:49:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.13
+2016-01-05T09:51:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.12
+2016-01-05T09:53:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.12
+2016-01-05T09:55:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.13
+2016-01-05T09:57:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.13
+2016-01-05T09:58:52.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.13
+2016-01-05T09:59:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.13
+2016-01-05T10:01:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.12
+2016-01-05T10:03:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.12
+2016-01-05T10:05:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.12
+2016-01-05T10:07:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.12
+2016-01-05T10:09:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.12
+2016-01-05T10:11:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.12
+2016-01-05T10:13:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.11
+2016-01-05T10:15:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.11
+2016-01-05T10:17:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.11
+2016-01-05T10:19:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.13
+2016-01-05T10:21:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.11
+2016-01-05T10:23:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.11
+2016-01-05T10:25:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.09
+2016-01-05T10:27:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.09
+2016-01-05T10:29:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.09
+2016-01-05T10:31:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.09
+2016-01-05T10:33:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.10
+2016-01-05T10:35:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.11
+2016-01-05T10:37:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.11
+2016-01-05T10:39:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.12
+2016-01-05T10:41:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.11
+2016-01-05T10:43:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.11
+2016-01-05T10:45:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.11
+2016-01-05T10:47:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.12
+2016-01-05T10:49:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.12
+2016-01-05T10:51:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.12
+2016-01-05T10:53:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.12
+2016-01-05T10:55:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.13
+2016-01-05T10:57:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.13
+2016-01-05T10:58:52.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.13
+2016-01-05T10:59:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.13
+2016-01-05T11:01:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.12
+2016-01-05T11:03:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.13
+2016-01-05T11:05:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.13
+2016-01-05T11:07:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.12
+2016-01-05T11:09:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.12
+2016-01-05T11:11:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.12
+2016-01-05T11:13:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.12
+2016-01-05T11:15:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.13
+2016-01-05T11:17:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.13
+2016-01-05T11:19:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.13
+2016-01-05T11:21:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.14
+2016-01-05T11:23:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.14
+2016-01-05T11:25:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.14
+2016-01-05T11:27:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.14
+2016-01-05T11:29:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.14
+2016-01-05T11:31:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.13
+2016-01-05T11:33:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.13
+2016-01-05T11:35:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.13
+2016-01-05T11:37:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.13
+2016-01-05T11:39:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.13
+2016-01-05T11:41:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.12
+2016-01-05T11:43:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.13
+2016-01-05T11:45:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.13
+2016-01-05T11:47:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.13
+2016-01-05T11:49:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.13
+2016-01-05T11:51:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.12
+2016-01-05T11:53:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.12
+2016-01-05T11:55:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.13
+2016-01-05T11:57:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.13
+2016-01-05T11:58:52.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.12
+2016-01-05T11:59:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.12
+2016-01-05T12:01:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.13
+2016-01-05T12:03:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.13
+2016-01-05T12:05:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.13
+2016-01-05T12:07:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.13
+2016-01-05T12:09:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.13
+2016-01-05T12:11:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.13
+2016-01-05T12:13:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.13
+2016-01-05T12:15:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.13
+2016-01-05T12:17:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.13
+2016-01-05T12:19:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.14
+2016-01-05T12:21:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.14
+2016-01-05T12:23:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.14
+2016-01-05T12:25:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.14
+2016-01-05T12:27:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.14
+2016-01-05T12:29:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.14
+2016-01-05T12:31:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.15
+2016-01-05T12:33:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.14
+2016-01-05T12:35:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.14
+2016-01-05T12:37:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.14
+2016-01-05T12:39:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.14
+2016-01-05T12:41:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.14
+2016-01-05T12:43:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.14
+2016-01-05T12:45:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.13
+2016-01-05T12:47:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.13
+2016-01-05T12:49:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.13
+2016-01-05T12:51:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.14
+2016-01-05T12:53:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.13
+2016-01-05T12:55:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.15
+2016-01-05T12:57:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.15
+2016-01-05T12:58:52.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.16
+2016-01-05T12:59:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.16
+2016-01-05T13:01:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.15
+2016-01-05T13:03:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.14
+2016-01-05T13:05:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.14
+2016-01-05T13:07:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.14
+2016-01-05T13:09:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.14
+2016-01-05T13:11:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.13
+2016-01-05T13:13:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.13
+2016-01-05T13:15:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.14
+2016-01-05T13:17:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.13
+2016-01-05T13:19:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.12
+2016-01-05T13:21:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.12
+2016-01-05T13:23:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.12
+2016-01-05T13:25:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.12
+2016-01-05T13:27:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.11
+2016-01-05T13:29:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.11
+2016-01-05T13:31:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.11
+2016-01-05T13:33:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.11
+2016-01-05T13:35:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.12
+2016-01-05T13:37:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.12
+2016-01-05T13:39:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.12
+2016-01-05T13:41:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.13
+2016-01-05T13:43:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.12
+2016-01-05T13:45:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.11
+2016-01-05T13:47:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.11
+2016-01-05T13:49:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.12
+2016-01-05T13:51:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.11
+2016-01-05T13:53:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.11
+2016-01-05T13:55:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.11
+2016-01-05T13:57:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.11
+2016-01-05T13:58:52.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.11
+2016-01-05T13:59:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.11
+2016-01-05T14:01:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.10
+2016-01-05T14:03:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.08
+2016-01-05T14:05:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.07
+2016-01-05T14:07:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.07
+2016-01-05T14:09:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.08
+2016-01-05T14:11:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.08
+2016-01-05T14:13:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.09
+2016-01-05T14:15:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.08
+2016-01-05T14:17:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.08
+2016-01-05T14:19:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.09
+2016-01-05T14:21:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.10
+2016-01-05T14:23:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.11
+2016-01-05T14:25:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.12
+2016-01-05T14:27:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.10
+2016-01-05T14:29:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.09
+2016-01-05T14:31:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.09
+2016-01-05T14:33:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.08
+2016-01-05T14:35:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.08
+2016-01-05T14:37:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.10
+2016-01-05T14:39:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.08
+2016-01-05T14:41:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.08
+2016-01-05T14:43:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.09
+2016-01-05T14:45:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.10
+2016-01-05T14:47:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.12
+2016-01-05T14:49:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.12
+2016-01-05T14:51:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.09
+2016-01-05T14:53:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.18
+2016-01-05T14:55:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.10
+2016-01-05T14:57:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.11
+2016-01-05T14:58:52.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.14
+2016-01-05T14:59:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.14
+2016-01-05T15:01:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.16
+2016-01-05T15:03:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.11
+2016-01-05T15:05:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.13
+2016-01-05T15:07:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.11
+2016-01-05T15:09:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.09
+2016-01-05T15:11:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.10
+2016-01-05T15:13:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.19
+2016-01-05T15:15:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.25
+2016-01-05T15:17:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.19
+2016-01-05T15:19:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.12
+2016-01-05T15:21:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.16
+2016-01-05T15:23:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.24
+2016-01-05T15:25:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.30
+2016-01-05T15:27:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.32
+2016-01-05T15:29:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.27
+2016-01-05T15:31:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.23
+2016-01-05T15:33:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.29
+2016-01-05T15:35:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.26
+2016-01-05T15:37:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.30
+2016-01-05T15:39:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.30
+2016-01-05T15:41:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.27
+2016-01-05T15:43:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.29
+2016-01-05T15:45:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.28
+2016-01-05T15:47:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.28
+2016-01-05T15:49:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.36
+2016-01-05T15:51:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.35
+2016-01-05T15:53:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.33
+2016-01-05T15:55:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.28
+2016-01-05T15:57:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.32
+2016-01-05T15:58:52.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.39
+2016-01-05T15:59:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.40
+2016-01-05T16:01:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.32
+2016-01-05T16:03:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.32
+2016-01-05T16:05:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.37
+2016-01-05T16:07:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.35
+2016-01-05T16:09:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.44
+2016-01-05T16:11:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.41
+2016-01-05T16:13:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.37
+2016-01-05T16:15:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.40
+2016-01-05T16:17:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.42
+2016-01-05T16:19:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.50
+2016-01-05T16:21:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.52
+2016-01-05T16:23:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.50
+2016-01-05T16:25:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.53
+2016-01-05T16:27:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.50
+2016-01-05T16:29:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.50
+2016-01-05T16:31:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.50
+2016-01-05T16:33:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.54
+2016-01-05T16:35:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.47
+2016-01-05T16:37:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.46
+2016-01-05T16:39:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.50
+2016-01-05T16:41:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.52
+2016-01-05T16:43:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.46
+2016-01-05T16:45:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.43
+2016-01-05T16:47:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.56
+2016-01-05T16:49:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.44
+2016-01-05T16:51:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.50
+2016-01-05T16:53:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.54
+2016-01-05T16:55:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.57
+2016-01-05T16:57:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.53
+2016-01-05T16:58:52.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.53
+2016-01-05T16:59:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.54
+2016-01-05T17:01:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.56
+2016-01-05T17:03:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.61
+2016-01-05T17:05:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.65
+2016-01-05T17:07:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.53
+2016-01-05T17:09:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.57
+2016-01-05T17:11:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.60
+2016-01-05T17:13:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.62
+2016-01-05T17:15:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.48
+2016-01-05T17:17:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.55
+2016-01-05T17:19:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.59
+2016-01-05T17:21:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.59
+2016-01-05T17:23:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.58
+2016-01-05T17:25:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.54
+2016-01-05T17:27:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.53
+2016-01-05T17:29:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.61
+2016-01-05T17:31:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.63
+2016-01-05T17:33:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.61
+2016-01-05T17:35:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.62
+2016-01-05T17:37:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.62
+2016-01-05T17:39:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.69
+2016-01-05T17:41:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.60
+2016-01-05T17:43:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.63
+2016-01-05T17:45:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.55
+2016-01-05T17:47:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.60
+2016-01-05T17:49:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.59
+2016-01-05T17:51:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.62
+2016-01-05T17:53:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.66
+2016-01-05T17:55:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.60
+2016-01-05T17:57:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.64
+2016-01-05T17:58:52.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.68
+2016-01-05T17:59:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.69
+2016-01-05T18:01:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.59
+2016-01-05T18:03:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.59
+2016-01-05T18:05:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.60
+2016-01-05T18:07:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.60
+2016-01-05T18:09:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.63
+2016-01-05T18:11:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.53
+2016-01-05T18:13:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.55
+2016-01-05T18:15:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.54
+2016-01-05T18:17:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.54
+2016-01-05T18:19:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.57
+2016-01-05T18:21:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.57
+2016-01-05T18:23:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.58
+2016-01-05T18:25:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.52
+2016-01-05T18:27:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.53
+2016-01-05T18:29:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.57
+2016-01-05T18:31:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.59
+2016-01-05T18:33:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.55
+2016-01-05T18:35:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.57
+2016-01-05T18:37:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.63
+2016-01-05T18:39:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.58
+2016-01-05T18:41:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.53
+2016-01-05T18:43:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.60
+2016-01-05T18:45:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.56
+2016-01-05T18:47:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.54
+2016-01-05T18:49:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.50
+2016-01-05T18:51:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.52
+2016-01-05T18:53:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.57
+2016-01-05T18:55:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.60
+2016-01-05T18:57:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.55
+2016-01-05T18:58:52.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.54
+2016-01-05T18:59:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.54
+2016-01-05T19:01:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.55
+2016-01-05T19:03:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.54
+2016-01-05T19:05:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.52
+2016-01-05T19:07:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.52
+2016-01-05T19:09:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.54
+2016-01-05T19:11:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.54
+2016-01-05T19:13:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.50
+2016-01-05T19:15:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.53
+2016-01-05T19:17:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.56
+2016-01-05T19:19:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.54
+2016-01-05T19:21:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.51
+2016-01-05T19:23:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.54
+2016-01-05T19:25:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.51
+2016-01-05T19:27:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.51
+2016-01-05T19:29:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.50
+2016-01-05T19:31:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.51
+2016-01-05T19:33:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.52
+2016-01-05T19:35:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.53
+2016-01-05T19:37:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.53
+2016-01-05T19:39:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.54
+2016-01-05T19:41:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.53
+2016-01-05T19:43:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.52
+2016-01-05T19:45:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.52
+2016-01-05T19:47:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.53
+2016-01-05T19:49:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.56
+2016-01-05T19:51:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.59
+2016-01-05T19:53:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.55
+2016-01-05T19:55:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.53
+2016-01-05T19:57:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.52
+2016-01-05T19:58:52.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.52
+2016-01-05T19:59:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.52
+2016-01-05T20:01:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.54
+2016-01-05T20:03:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.59
+2016-01-05T20:05:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.58
+2016-01-05T20:07:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.56
+2016-01-05T20:09:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.56
+2016-01-05T20:11:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.54
+2016-01-05T20:13:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.54
+2016-01-05T20:15:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.56
+2016-01-05T20:17:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.59
+2016-01-05T20:19:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.58
+2016-01-05T20:21:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.56
+2016-01-05T20:23:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.56
+2016-01-05T20:25:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.55
+2016-01-05T20:27:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.56
+2016-01-05T20:29:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.58
+2016-01-05T20:31:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.56
+2016-01-05T20:33:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.55
+2016-01-05T20:35:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.54
+2016-01-05T20:37:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.55
+2016-01-05T20:39:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.57
+2016-01-05T20:41:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.59
+2016-01-05T20:43:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.56
+2016-01-05T20:45:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.54
+2016-01-05T20:47:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.55
+2016-01-05T20:49:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.57
+2016-01-05T20:51:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.59
+2016-01-05T20:53:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.62
+2016-01-05T20:55:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.60
+2016-01-05T20:57:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.58
+2016-01-05T20:58:52.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.60
+2016-01-05T20:59:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.60
+2016-01-05T21:01:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.60
+2016-01-05T21:03:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.61
+2016-01-05T21:05:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.61
+2016-01-05T21:07:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.61
+2016-01-05T21:09:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.59
+2016-01-05T21:11:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.57
+2016-01-05T21:13:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.58
+2016-01-05T21:15:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.60
+2016-01-05T21:17:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.61
+2016-01-05T21:19:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.60
+2016-01-05T21:21:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.61
+2016-01-05T21:23:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.60
+2016-01-05T21:25:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.60
+2016-01-05T21:27:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.60
+2016-01-05T21:29:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.59
+2016-01-05T21:31:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.60
+2016-01-05T21:33:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.61
+2016-01-05T21:35:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.61
+2016-01-05T21:37:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.61
+2016-01-05T21:39:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.61
+2016-01-05T21:41:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.62
+2016-01-05T21:43:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.63
+2016-01-05T21:45:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.63
+2016-01-05T21:47:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.64
+2016-01-05T21:49:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.64
+2016-01-05T21:51:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.64
+2016-01-05T21:53:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.63
+2016-01-05T21:55:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.63
+2016-01-05T21:57:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.64
+2016-01-05T21:58:52.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.65
+2016-01-05T22:57:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.89
+2016-01-05T22:59:07.000Z,nanoos_psi_baycenter_h1_watertemp_1,5.89</swe2:values>
+            </swe2:DataArray>
+          </swe2:field>
+        </swe2:DataRecord>
+      </om:result>
+    </om:Observation>
+  </om:member>
+</om:ObservationCollection>

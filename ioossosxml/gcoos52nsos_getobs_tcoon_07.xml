@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<om:ObservationCollection xmlns:om="http://www.opengis.net/om/1.0" xmlns:gml="http://www.opengis.net/gml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:swe="http://www.opengis.net/swe/1.0.1" xmlns:swe2="http://www.opengis.net/swe/2.0" gml:id="oc_1452111200706" xsi:schemaLocation="http://www.opengis.net/swes/2.0 http://schemas.opengis.net/swes/2.0/swes.xsd http://www.opengis.net/om/1.0 http://schemas.opengis.net/om/1.0.0/om.xsd http://www.opengis.net/gml http://schemas.opengis.net/gml/3.1.1/base/gml.xsd http://www.opengis.net/swe/1.0.1 http://schemas.opengis.net/sweCommon/1.0.1/swe.xsd">
+  <gml:metaDataProperty xlink:title="disclaimer">
+    <gml:GenericMetaData>
+      <gml:description>Data provided without any guarantee of accuracy. Provider assumes no liability whatsoever. USE AT YOUR OWN RISK.</gml:description>
+    </gml:GenericMetaData>
+  </gml:metaDataProperty>
+  <gml:metaDataProperty xlink:title="ioosTemplateVersion" xlink:href="http://code.google.com/p/ioostech/source/browse/#svn%2Ftrunk%2Ftemplates%2FMilestone1.0">
+    <gml:version>1.0</gml:version>
+  </gml:metaDataProperty>
+  <gml:metaDataProperty xlink:title="softwareVersion">
+    <gml:version>0.8.1-SNAPSHOT</gml:version>
+  </gml:metaDataProperty>
+  <gml:boundedBy>
+    <gml:Envelope srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+      <gml:lowerCorner>27.839194 -97.443972</gml:lowerCorner>
+      <gml:upperCorner>27.839194 -97.443972</gml:upperCorner>
+    </gml:Envelope>
+  </gml:boundedBy>
+  <om:member>
+    <om:Observation>
+      <gml:description>timeSeries</gml:description>
+      <om:samplingTime>
+        <gml:TimePeriod>
+          <gml:beginPosition>2016-01-03T00:30:00.000Z</gml:beginPosition>
+          <gml:endPosition>2016-01-05T16:30:00.000Z</gml:endPosition>
+        </gml:TimePeriod>
+      </om:samplingTime>
+      <om:procedure>
+        <om:Process>
+          <gml:member xlink:href="urn:ioos:station:tcoon:072"/>
+        </om:Process>
+      </om:procedure>
+      <om:observedProperty>
+        <swe:CompositePhenomenon dimension="1" gml:id="observedproperties">
+          <gml:name>Response Observed Properties</gml:name>
+          <swe:component xlink:href="http://mmisw.org/ont/cf/parameter/sea_water_temperature"/>
+        </swe:CompositePhenomenon>
+      </om:observedProperty>
+      <om:featureOfInterest>
+        <gml:FeatureCollection>
+          <gml:metaDataProperty xlink:title="featureType">
+            <gml:GenericMetaData>
+              <gml:name codeSpace="http://cf-pcmdi.llnl.gov/documents/cf-conventions/1.6/cf-conventions.html#discrete-sampling-geometries">timeSeries</gml:name>
+            </gml:GenericMetaData>
+          </gml:metaDataProperty>
+          <gml:boundedBy>
+            <gml:Envelope srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+              <gml:lowerCorner>27.839194 -97.443972</gml:lowerCorner>
+              <gml:upperCorner>27.839194 -97.443972</gml:upperCorner>
+            </gml:Envelope>
+          </gml:boundedBy>
+          <gml:location>
+            <gml:MultiPoint srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+              <gml:pointMembers>
+                <gml:Point>
+                  <gml:name>urn:ioos:station:tcoon:072</gml:name>
+                  <gml:pos>27.839194 -97.443972</gml:pos>
+                </gml:Point>
+              </gml:pointMembers>
+            </gml:MultiPoint>
+          </gml:location>
+        </gml:FeatureCollection>
+      </om:featureOfInterest>
+      <om:result>
+        <swe2:DataRecord definition="http://mmisw.org/ont/ioos/swe_element_type/observationRecord">
+          <swe2:field name="stations">
+            <swe2:DataRecord definition="http://mmisw.org/ont/ioos/swe_element_type/stations">
+              <swe2:field name="tcoon_072">
+                <swe2:DataRecord id="tcoon_072_timeseries" definition="http://mmisw.org/ont/ioos/swe_element_type/station">
+                  <swe2:field name="stationID">
+                    <swe2:Text definition="http://mmisw.org/ont/ioos/definition/stationID">
+                      <swe2:value>urn:ioos:station:tcoon:072</swe2:value>
+                    </swe2:Text>
+                  </swe2:field>
+                  <swe2:field name="platformLocation">
+                    <swe2:Vector definition="http://www.opengis.net/def/property/OGC/0/PlatformLocation" referenceFrame="http://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/4326&amp;2=http://www.opengis.net/def/crs/EPSG/0/5829" localFrame="#tcoon_072_frame">
+                      <swe2:coordinate name="latitude">
+                        <swe2:Quantity definition="http://mmisw.org/ont/cf/parameter/latitude" axisID="Lat">
+                          <swe2:uom code="deg"/>
+                          <swe2:value>27.839194</swe2:value>
+                        </swe2:Quantity>
+                      </swe2:coordinate>
+                      <swe2:coordinate name="longitude">
+                        <swe2:Quantity definition="http://mmisw.org/ont/cf/parameter/longitude" axisID="Lon">
+                          <swe2:uom code="deg"/>
+                          <swe2:value>-97.443972</swe2:value>
+                        </swe2:Quantity>
+                      </swe2:coordinate>
+                      <swe2:coordinate name="height">
+                        <swe2:Quantity definition="http://mmisw.org/ont/cf/parameter/height" axisID="Z">
+                          <swe2:uom code="m"/>
+                        </swe2:Quantity>
+                      </swe2:coordinate>
+                    </swe2:Vector>
+                  </swe2:field>
+                  <swe2:field name="sensors">
+                    <swe2:DataRecord definition="http://mmisw.org/ont/ioos/swe_element_type/sensors">
+                      <swe2:field name="tcoon_072_watertemperature">
+                        <swe2:DataRecord id="tcoon_072_watertemperature" definition="http://mmisw.org/ont/ioos/swe_element_type/sensor">
+                          <swe2:field name="sensorID">
+                            <swe2:Text definition="http://mmisw.org/ont/ioos/definition/sensorID">
+                              <swe2:value>urn:ioos:sensor:tcoon:072:watertemperature</swe2:value>
+                            </swe2:Text>
+                          </swe2:field>
+                          <swe2:field name="height">
+                            <swe2:Quantity definition="http://mmisw.org/ont/cf/parameter/height" axisID="Z" referenceFrame="#tcoon_072_frame">
+                              <swe2:uom code="m"/>
+                            </swe2:Quantity>
+                          </swe2:field>
+                          <swe2:field name="profileHeights">
+                            <swe2:DataArray definition="http://mmisw.org/ont/ioos/swe_element_type/profileHeights">
+                              <swe2:elementCount>
+                                <swe2:Count>
+                                  <swe2:value>1</swe2:value>
+                                </swe2:Count>
+                              </swe2:elementCount>
+                              <swe2:elementType name="profileDefinition">
+                                <swe2:DataRecord>
+                                  <swe2:field name="height">
+                                    <swe2:Quantity axisID="Z" definition="http://mmisw.org/ont/cf/parameter/height" referenceFrame="#tcoon_072_watertemperature_frame">
+                                      <swe2:uom code="m"/>
+                                    </swe2:Quantity>
+                                  </swe2:field>
+                                </swe2:DataRecord>
+                              </swe2:elementType>
+                              <swe2:encoding>
+                                <swe2:TextEncoding decimalSeparator="." tokenSeparator="," blockSeparator="&#10;"/>
+                              </swe2:encoding>
+                              <swe2:values>0.0</swe2:values>
+                            </swe2:DataArray>
+                          </swe2:field>
+                        </swe2:DataRecord>
+                      </swe2:field>
+                    </swe2:DataRecord>
+                  </swe2:field>
+                </swe2:DataRecord>
+              </swe2:field>
+            </swe2:DataRecord>
+          </swe2:field>
+          <swe2:field name="observationData">
+            <swe2:DataArray definition="http://mmisw.org/ont/ioos/swe_element_type/sensorObservationCollection">
+              <swe2:elementCount>
+                <swe2:Count>
+                  <swe2:value>64</swe2:value>
+                </swe2:Count>
+              </swe2:elementCount>
+              <swe2:elementType name="observations">
+                <swe2:DataRecord definition="http://mmisw.org/ont/ioos/swe_element_type/sensorObservations">
+                  <swe2:field name="time">
+                    <swe2:Time definition="http://www.opengis.net/def/property/OGC/0/SamplingTime">
+                      <swe2:uom xlink:href="http://www.opengis.net/def/uom/ISO-8601/0/Gregorian"/>
+                    </swe2:Time>
+                  </swe2:field>
+                  <swe2:field name="sensor">
+                    <swe2:DataChoice definition="http://mmisw.org/ont/ioos/swe_element_type/sensors">
+                      <swe2:item name="tcoon_072_watertemperature">
+                        <swe2:DataRecord definition="http://mmisw.org/ont/ioos/swe_element_type/sensor">
+                          <swe2:field name="sea_water_temperature">
+                            <swe2:Quantity definition="http://mmisw.org/ont/cf/parameter/sea_water_temperature">
+                              <swe2:uom xlink:href="urn:ogc:def:uom:udunits:2:degC"/>
+                            </swe2:Quantity>
+                          </swe2:field>
+                        </swe2:DataRecord>
+                      </swe2:item>
+                      <swe2:item name="dummy_item"/>
+                    </swe2:DataChoice>
+                  </swe2:field>
+                </swe2:DataRecord>
+              </swe2:elementType>
+              <swe2:encoding>
+                <swe2:TextEncoding decimalSeparator="." tokenSeparator="," blockSeparator="&#10;"/>
+              </swe2:encoding>
+              <swe2:values>2016-01-03T00:30:00.000Z,tcoon_072_watertemperature,10.20
+2016-01-03T01:30:00.000Z,tcoon_072_watertemperature,10.40
+2016-01-03T02:30:00.000Z,tcoon_072_watertemperature,10.30
+2016-01-03T03:30:00.000Z,tcoon_072_watertemperature,10.20
+2016-01-03T04:30:00.000Z,tcoon_072_watertemperature,10.20
+2016-01-03T05:30:00.000Z,tcoon_072_watertemperature,10.20
+2016-01-03T06:30:00.000Z,tcoon_072_watertemperature,10.20
+2016-01-03T07:30:00.000Z,tcoon_072_watertemperature,10.10
+2016-01-03T08:30:00.000Z,tcoon_072_watertemperature,10.00
+2016-01-03T09:30:00.000Z,tcoon_072_watertemperature,9.80
+2016-01-03T10:30:00.000Z,tcoon_072_watertemperature,9.70
+2016-01-03T11:30:00.000Z,tcoon_072_watertemperature,9.70
+2016-01-03T12:30:00.000Z,tcoon_072_watertemperature,9.70
+2016-01-03T13:30:00.000Z,tcoon_072_watertemperature,9.70
+2016-01-03T14:30:00.000Z,tcoon_072_watertemperature,9.80
+2016-01-03T15:30:00.000Z,tcoon_072_watertemperature,9.80
+2016-01-03T16:30:00.000Z,tcoon_072_watertemperature,9.80
+2016-01-03T17:30:00.000Z,tcoon_072_watertemperature,9.80
+2016-01-03T18:30:00.000Z,tcoon_072_watertemperature,9.80
+2016-01-03T19:30:00.000Z,tcoon_072_watertemperature,9.90
+2016-01-03T20:30:00.000Z,tcoon_072_watertemperature,10.00
+2016-01-03T21:30:00.000Z,tcoon_072_watertemperature,10.10
+2016-01-03T22:30:00.000Z,tcoon_072_watertemperature,10.10
+2016-01-03T23:30:00.000Z,tcoon_072_watertemperature,10.30
+2016-01-04T00:30:00.000Z,tcoon_072_watertemperature,10.30
+2016-01-04T01:30:00.000Z,tcoon_072_watertemperature,10.40
+2016-01-04T02:30:00.000Z,tcoon_072_watertemperature,10.50
+2016-01-04T04:00:00.000Z,tcoon_072_watertemperature,10.30
+2016-01-04T04:30:00.000Z,tcoon_072_watertemperature,10.30
+2016-01-04T05:30:00.000Z,tcoon_072_watertemperature,10.30
+2016-01-04T06:30:00.000Z,tcoon_072_watertemperature,10.10
+2016-01-04T07:30:00.000Z,tcoon_072_watertemperature,9.70
+2016-01-04T08:30:00.000Z,tcoon_072_watertemperature,9.60
+2016-01-04T09:30:00.000Z,tcoon_072_watertemperature,9.50
+2016-01-04T10:30:00.000Z,tcoon_072_watertemperature,9.40
+2016-01-04T11:30:00.000Z,tcoon_072_watertemperature,9.40
+2016-01-04T12:30:00.000Z,tcoon_072_watertemperature,9.50
+2016-01-04T13:30:00.000Z,tcoon_072_watertemperature,9.40
+2016-01-04T14:30:00.000Z,tcoon_072_watertemperature,9.40
+2016-01-04T15:30:00.000Z,tcoon_072_watertemperature,9.50
+2016-01-04T16:30:00.000Z,tcoon_072_watertemperature,9.60
+2016-01-04T17:30:00.000Z,tcoon_072_watertemperature,9.70
+2016-01-04T18:30:00.000Z,tcoon_072_watertemperature,9.80
+2016-01-04T19:30:00.000Z,tcoon_072_watertemperature,10.10
+2016-01-04T20:30:00.000Z,tcoon_072_watertemperature,10.20
+2016-01-04T21:30:00.000Z,tcoon_072_watertemperature,10.40
+2016-01-04T22:30:00.000Z,tcoon_072_watertemperature,10.60
+2016-01-04T23:30:00.000Z,tcoon_072_watertemperature,10.90
+2016-01-05T00:30:00.000Z,tcoon_072_watertemperature,10.90
+2016-01-05T01:30:00.000Z,tcoon_072_watertemperature,10.90
+2016-01-05T02:30:00.000Z,tcoon_072_watertemperature,11.20
+2016-01-05T03:30:00.000Z,tcoon_072_watertemperature,10.90
+2016-01-05T04:30:00.000Z,tcoon_072_watertemperature,11.50
+2016-01-05T05:30:00.000Z,tcoon_072_watertemperature,11.50
+2016-01-05T06:30:00.000Z,tcoon_072_watertemperature,11.40
+2016-01-05T07:30:00.000Z,tcoon_072_watertemperature,11.80
+2016-01-05T08:30:00.000Z,tcoon_072_watertemperature,11.60
+2016-01-05T10:30:00.000Z,tcoon_072_watertemperature,11.60
+2016-01-05T11:30:00.000Z,tcoon_072_watertemperature,11.60
+2016-01-05T12:30:00.000Z,tcoon_072_watertemperature,11.30
+2016-01-05T13:30:00.000Z,tcoon_072_watertemperature,10.60
+2016-01-05T14:30:00.000Z,tcoon_072_watertemperature,10.60
+2016-01-05T15:30:00.000Z,tcoon_072_watertemperature,10.80
+2016-01-05T16:30:00.000Z,tcoon_072_watertemperature,10.90</swe2:values>
+            </swe2:DataArray>
+          </swe2:field>
+        </swe2:DataRecord>
+      </om:result>
+    </om:Observation>
+  </om:member>
+</om:ObservationCollection>

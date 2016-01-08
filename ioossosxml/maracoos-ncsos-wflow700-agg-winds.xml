@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<om:ObservationCollection xmlns:om="http://www.opengis.net/om/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:gml="http://www.opengis.net/gml" xmlns:swe2="http://www.opengis.net/swe/2.0" xmlns:swe="http://www.opengis.net/swe/1.0.1" xsi:schemaLocation="http://www.opengis.net/om/1.0 http://schemas.opengis.net/om/1.0.0/observation.xsd">
+  <gml:metaDataProperty xlink:title="disclaimer">
+    <gml:GenericMetaData>
+      <gml:description>Data provided without any guarantee of accuracy. Provider assumes no liability whatsoever. USE AT YOUR OWN RISK.</gml:description>
+    </gml:GenericMetaData>
+  </gml:metaDataProperty>
+  <gml:metaDataProperty xlink:title="ioosTemplateVersion" xlink:href="http://code.google.com/p/ioostech/source/browse/#svn%2Ftrunk%2Ftemplates%2FMilestone1.0">
+    <gml:version>1.0</gml:version>
+  </gml:metaDataProperty>
+  <gml:metaDataProperty xlink:title="softwareVersion" xlink:href="https://github.com/asascience-open/ncSOS/releases">
+    <gml:version>1.1.1</gml:version>
+  </gml:metaDataProperty>
+  <om:member>
+    <om:Observation>
+      <gml:description>No description</gml:description>
+      <om:samplingTime>
+        <gml:TimePeriod>
+          <gml:beginPosition>2014-03-02T00:58:00Z</gml:beginPosition>
+          <gml:endPosition>2014-03-02T03:08:00Z</gml:endPosition>
+        </gml:TimePeriod>
+      </om:samplingTime>
+      <om:procedure>
+        <om:Process>
+          <gml:member xlink:href="urn:ioos:station:ncsos:station-700" />
+        </om:Process>
+      </om:procedure>
+      <om:observedProperty>
+        <swe:CompositePhenomenon dimension="1" gml:id="observedProperties">
+          <gml:name>Response Observed Properties</gml:name>
+          <swe:component xlink:href="http://mmisw.org/ont/cf/parameter/wind_speed" />
+        </swe:CompositePhenomenon>
+      </om:observedProperty>
+      <om:featureOfInterest>
+        <gml:FeatureCollection>
+          <gml:metaDataProperty>
+            <gml:name codeSpace="http://cf-pcmdi.llnl.gov/documents/cf-conventions/1.6/cf-conventions.html#discrete-sampling-geometries">timeSeries</gml:name>
+          </gml:metaDataProperty>
+          <gml:boundedBy>
+            <gml:Envelope srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+              <gml:lowerCorner>37.9664306640625 -75.87741088867188</gml:lowerCorner>
+              <gml:upperCorner>37.9664306640625 -75.87741088867188</gml:upperCorner>
+            </gml:Envelope>
+          </gml:boundedBy>
+          <gml:location>
+            <gml:MultiPoint srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+              <gml:pointMembers>
+                <gml:Point>
+                  <gml:name>urn:ioos:station:ncsos:station-700</gml:name>
+                  <gml:pos>37.9664306640625 -75.87741088867188</gml:pos>
+                </gml:Point>
+              </gml:pointMembers>
+            </gml:MultiPoint>
+          </gml:location>
+        </gml:FeatureCollection>
+      </om:featureOfInterest>
+      <om:result>
+        <swe2:DataRecord definition="http://mmisw.org/ont/ioos/swe_element_type/observationRecord">
+          <swe2:field name="stations">
+            <swe2:DataRecord definition="http://mmisw.org/ont/ioos/swe_element_type/stations">
+              <swe2:field name="ncsos_station_700">
+                <swe2:DataRecord id="ncsos_station_700" definition="http://mmisw.org/ont/ioos/swe_element_type/station">
+                  <swe2:field name="stationID">
+                    <swe2:Text definition="http://mmisw.org/ont/ioos/definition/stationID">
+                      <swe2:value>urn:ioos:station:ncsos:station-700</swe2:value>
+                    </swe2:Text>
+                  </swe2:field>
+                  <swe2:field name="platformLocation">
+                    <swe2:Vector definition="http://www.opengis.net/def/property/OGC/0/PlatformLocation" referenceFrame="http://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/4326&amp;amp;2=http://www.opengis.net/def/crs/EPSG/0/5829" localFrame="#PlatformFrame">
+                      <swe2:coordinate name="latitude">
+                        <swe2:Quantity definition="http://mmisw.org/ont/cf/parameter/latitude" axisID="Lat">
+                          <swe2:uom code="deg" />
+                          <swe2:value>37.9664306640625</swe2:value>
+                        </swe2:Quantity>
+                      </swe2:coordinate>
+                      <swe2:coordinate name="longitude">
+                        <swe2:Quantity definition="http://mmisw.org/ont/cf/parameter/longitude" axisID="Lon">
+                          <swe2:uom code="deg" />
+                          <swe2:value>-75.87741088867188</swe2:value>
+                        </swe2:Quantity>
+                      </swe2:coordinate>
+                      <swe2:coordinate name="height">
+                        <swe2:Quantity definition="http://mmisw.org/ont/cf/parameter/height" axisID="Z">
+                          <swe2:uom code="m" />
+                          <swe2:value>0.0</swe2:value>
+                        </swe2:Quantity>
+                      </swe2:coordinate>
+                    </swe2:Vector>
+                  </swe2:field>
+                  <swe2:field name="sensors">
+                    <swe2:DataRecord definition="http://mmisw.org/ont/ioos/swe_element_type/sensors">
+                      <swe2:field name="ncsos_station_700_wind_speed">
+                        <swe2:DataRecord id="ncsos_station_700_wind_speed" definition="http://mmisw.org/ont/ioos/swe_element_type/sensor">
+                          <swe2:field name="sensorID">
+                            <swe2:Text definition="http://mmisw.org/ont/ioos/definition/sensorID">
+                              <swe2:value>urn:ioos:sensor:ncsos:station-700:wind_speed</swe2:value>
+                            </swe2:Text>
+                          </swe2:field>
+                          <swe2:field name="height">
+                            <swe2:Quantity definition="http://mmisw.org/ont/cf/parameter/height" referenceFrame="#PlatformFrame" axisID="Z">
+                              <swe2:uom code="m" />
+                              <swe2:value>0</swe2:value>
+                            </swe2:Quantity>
+                          </swe2:field>
+                        </swe2:DataRecord>
+                      </swe2:field>
+                    </swe2:DataRecord>
+                  </swe2:field>
+                </swe2:DataRecord>
+              </swe2:field>
+            </swe2:DataRecord>
+          </swe2:field>
+          <swe2:field name="observationData">
+            <swe2:DataArray definition="http://mmisw.org/ont/ioos/swe_element_type/sensorObservationCollection">
+              <swe2:elementCount>
+                <swe2:Count>
+                  <swe2:value>27</swe2:value>
+                </swe2:Count>
+              </swe2:elementCount>
+              <swe2:elementType name="observations">
+                <swe2:DataRecord definition="http://mmisw.org/ont/ioos/swe_element_type/sensorObservations">
+                  <swe2:field name="time">
+                    <swe2:Time definition="http://www.opengis.net/def/property/OGC/0/SamplingTime">
+                      <swe2:uom xlink:href="http://www.opengis.net/def/uom/ISO-8601/0/Gregorian" />
+                    </swe2:Time>
+                  </swe2:field>
+                  <swe2:field name="sensor">
+                    <swe2:DataChoice definition="http://mmisw.org/ont/ioos/swe_element_type/sensors">
+                      <swe2:item name="ncsos_station_700_wind_speed">
+                        <swe2:DataRecord definition="http://mmisw.org/ont/ioos/swe_element_type/sensor">
+                          <swe2:field name="wind_speed">
+                            <swe2:Quantity definition="http://mmisw.org/ont/cf/parameter/wind_speed">
+                              <swe2:uom code="m/s" />
+                              <swe2:nilValues>
+                                <swe2:NilValues>
+                                  <swe2:nilValue reason="http://www.opengis.net/def/nil/OGC/0/missing">-9999.0</swe2:nilValue>
+                                </swe2:NilValues>
+                              </swe2:nilValues>
+                            </swe2:Quantity>
+                          </swe2:field>
+                        </swe2:DataRecord>
+                      </swe2:item>
+                      <swe2:item name="dummy_item" />
+                    </swe2:DataChoice>
+                  </swe2:field>
+                </swe2:DataRecord>
+              </swe2:elementType>
+              <swe2:encoding>
+                <swe2:TextEncoding decimalSeparator="." tokenSeparator="," blockSeparator="&#xA;" />
+              </swe2:encoding>
+              <swe2:values>2014-03-02T00:58:00Z,ncsos_station_700_wind_speed,2.2352
+2014-03-02T01:58:00Z,ncsos_station_700_wind_speed,0.357632
+2014-03-02T01:53:00Z,ncsos_station_700_wind_speed,1.162304
+2014-03-02T01:48:00Z,ncsos_station_700_wind_speed,0.581152
+2014-03-02T01:43:00Z,ncsos_station_700_wind_speed,1.519936
+2014-03-02T01:38:00Z,ncsos_station_700_wind_speed,2.01168
+2014-03-02T01:33:00Z,ncsos_station_700_wind_speed,2.503424
+2014-03-02T01:28:00Z,ncsos_station_700_wind_speed,2.816352
+2014-03-02T01:23:00Z,ncsos_station_700_wind_speed,2.414016
+2014-03-02T01:18:00Z,ncsos_station_700_wind_speed,2.592832
+2014-03-02T01:13:00Z,ncsos_station_700_wind_speed,2.90576
+2014-03-02T01:08:00Z,ncsos_station_700_wind_speed,2.056384
+2014-03-02T01:03:00Z,ncsos_station_700_wind_speed,2.101088
+2014-03-02T02:58:00Z,ncsos_station_700_wind_speed,2.056384
+2014-03-02T02:53:00Z,ncsos_station_700_wind_speed,1.654048
+2014-03-02T02:48:00Z,ncsos_station_700_wind_speed,1.251712
+2014-03-02T02:43:00Z,ncsos_station_700_wind_speed,0.89408
+2014-03-02T02:38:00Z,ncsos_station_700_wind_speed,0.849376
+2014-03-02T02:33:00Z,ncsos_station_700_wind_speed,0.67056
+2014-03-02T02:28:00Z,ncsos_station_700_wind_speed,0.804672
+2014-03-02T02:23:00Z,ncsos_station_700_wind_speed,1.162304
+2014-03-02T02:18:00Z,ncsos_station_700_wind_speed,0.89408
+2014-03-02T02:13:00Z,ncsos_station_700_wind_speed,0.938784
+2014-03-02T02:08:00Z,ncsos_station_700_wind_speed,0.536448
+2014-03-02T02:03:00Z,ncsos_station_700_wind_speed,0.357632
+2014-03-02T03:08:00Z,ncsos_station_700_wind_speed,1.832864
+2014-03-02T03:03:00Z,ncsos_station_700_wind_speed,2.369312</swe2:values>
+            </swe2:DataArray>
+          </swe2:field>
+        </swe2:DataRecord>
+      </om:result>
+    </om:Observation>
+  </om:member>
+</om:ObservationCollection>

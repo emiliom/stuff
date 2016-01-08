@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- http://sos.glos.us/52n/sos/kvp?service=SOS&version=1.0.0&request=GetObservation&offering=urn%3Aioos%3Astation%3Aus.glos%3A45024&observedProperty=http%3A%2F%2Fmmisw.org%2Font%2Fcf%2Fparameter%2Fair_temperature&procedure=urn%3Aioos%3Astation%3Aus.glos%3A45024&eventtime=2015-05-19T07:00:00.000/2015-05-19T08:00:00.000&responseFormat=text%2Fxml%3Bsubtype%3D%22om%2F1.0.0%2Fprofiles%2Fioos_sos%2F1.0%22 -->
+
+<om:ObservationCollection xmlns:om="http://www.opengis.net/om/1.0" xmlns:gml="http://www.opengis.net/gml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:swe="http://www.opengis.net/swe/1.0.1" xmlns:swe2="http://www.opengis.net/swe/2.0" gml:id="oc_1452275523357" xsi:schemaLocation="http://www.opengis.net/swes/2.0 http://schemas.opengis.net/swes/2.0/swes.xsd http://www.opengis.net/om/1.0 http://schemas.opengis.net/om/1.0.0/om.xsd http://www.opengis.net/gml http://schemas.opengis.net/gml/3.1.1/base/gml.xsd http://www.opengis.net/swe/1.0.1 http://schemas.opengis.net/sweCommon/1.0.1/swe.xsd">
+  <gml:metaDataProperty xlink:title="disclaimer">
+    <gml:GenericMetaData>
+      <gml:description>Data provided without any guarantee of accuracy. Provider assumes no liability whatsoever. USE AT YOUR OWN RISK.</gml:description>
+    </gml:GenericMetaData>
+  </gml:metaDataProperty>
+  <gml:metaDataProperty xlink:title="ioosTemplateVersion" xlink:href="http://code.google.com/p/ioostech/source/browse/#svn%2Ftrunk%2Ftemplates%2FMilestone1.0">
+    <gml:version>1.0</gml:version>
+  </gml:metaDataProperty>
+  <gml:metaDataProperty xlink:title="softwareVersion">
+    <gml:version>0.8.0-SNAPSHOT</gml:version>
+  </gml:metaDataProperty>
+  <gml:boundedBy>
+    <gml:Envelope srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+      <gml:lowerCorner>43.977 -86.56</gml:lowerCorner>
+      <gml:upperCorner>43.977 -86.56</gml:upperCorner>
+    </gml:Envelope>
+  </gml:boundedBy>
+  <om:member>
+    <om:Observation>
+      <gml:description>timeSeries</gml:description>
+      <om:samplingTime>
+        <gml:TimePeriod>
+          <gml:beginPosition>2015-05-19T07:10:00.000Z</gml:beginPosition>
+          <gml:endPosition>2015-05-19T07:50:00.000Z</gml:endPosition>
+        </gml:TimePeriod>
+      </om:samplingTime>
+      <om:procedure>
+        <om:Process>
+          <gml:member xlink:href="urn:ioos:station:us.glos:45024"/>
+        </om:Process>
+      </om:procedure>
+      <om:observedProperty>
+        <swe:CompositePhenomenon dimension="1" gml:id="observedproperties">
+          <gml:name>Response Observed Properties</gml:name>
+          <swe:component xlink:href="http://mmisw.org/ont/cf/parameter/air_temperature"/>
+        </swe:CompositePhenomenon>
+      </om:observedProperty>
+      <om:featureOfInterest>
+        <gml:FeatureCollection>
+          <gml:metaDataProperty xlink:title="featureType">
+            <gml:GenericMetaData>
+              <gml:name codeSpace="http://cf-pcmdi.llnl.gov/documents/cf-conventions/1.6/cf-conventions.html#discrete-sampling-geometries">timeSeries</gml:name>
+            </gml:GenericMetaData>
+          </gml:metaDataProperty>
+          <gml:boundedBy>
+            <gml:Envelope srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+              <gml:lowerCorner>43.977 -86.56</gml:lowerCorner>
+              <gml:upperCorner>43.977 -86.56</gml:upperCorner>
+            </gml:Envelope>
+          </gml:boundedBy>
+          <gml:location>
+            <gml:MultiPoint srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+              <gml:pointMembers>
+                <gml:Point>
+                  <gml:name>urn:ioos:station:us.glos:45024</gml:name>
+                  <gml:pos>43.977 -86.56</gml:pos>
+                </gml:Point>
+              </gml:pointMembers>
+            </gml:MultiPoint>
+          </gml:location>
+        </gml:FeatureCollection>
+      </om:featureOfInterest>
+      <om:result>
+        <swe2:DataRecord definition="http://mmisw.org/ont/ioos/swe_element_type/observationRecord">
+          <swe2:field name="stations">
+            <swe2:DataRecord definition="http://mmisw.org/ont/ioos/swe_element_type/stations">
+              <swe2:field name="us.glos_45024">
+                <swe2:DataRecord id="us.glos_45024_timeseries" definition="http://mmisw.org/ont/ioos/swe_element_type/station">
+                  <swe2:field name="stationID">
+                    <swe2:Text definition="http://mmisw.org/ont/ioos/definition/stationID">
+                      <swe2:value>urn:ioos:station:us.glos:45024</swe2:value>
+                    </swe2:Text>
+                  </swe2:field>
+                  <swe2:field name="platformLocation">
+                    <swe2:Vector definition="http://www.opengis.net/def/property/OGC/0/PlatformLocation" referenceFrame="http://www.opengis.net/def/crs-compound?1=http://www.opengis.net/def/crs/EPSG/0/4326&amp;2=http://www.opengis.net/def/crs/EPSG/0/5829" localFrame="#us.glos_45024_frame">
+                      <swe2:coordinate name="latitude">
+                        <swe2:Quantity definition="http://mmisw.org/ont/cf/parameter/latitude" axisID="Lat">
+                          <swe2:uom code="deg"/>
+                          <swe2:value>43.977</swe2:value>
+                        </swe2:Quantity>
+                      </swe2:coordinate>
+                      <swe2:coordinate name="longitude">
+                        <swe2:Quantity definition="http://mmisw.org/ont/cf/parameter/longitude" axisID="Lon">
+                          <swe2:uom code="deg"/>
+                          <swe2:value>-86.56</swe2:value>
+                        </swe2:Quantity>
+                      </swe2:coordinate>
+                      <swe2:coordinate name="height">
+                        <swe2:Quantity definition="http://mmisw.org/ont/cf/parameter/height" axisID="Z">
+                          <swe2:uom code="m"/>
+                        </swe2:Quantity>
+                      </swe2:coordinate>
+                    </swe2:Vector>
+                  </swe2:field>
+                  <swe2:field name="sensors">
+                    <swe2:DataRecord definition="http://mmisw.org/ont/ioos/swe_element_type/sensors">
+                      <swe2:field name="us.glos_45024_air_temperature">
+                        <swe2:DataRecord id="us.glos_45024_air_temperature" definition="http://mmisw.org/ont/ioos/swe_element_type/sensor">
+                          <swe2:field name="sensorID">
+                            <swe2:Text definition="http://mmisw.org/ont/ioos/definition/sensorID">
+                              <swe2:value>urn:ioos:sensor:us.glos:45024:air_temperature</swe2:value>
+                            </swe2:Text>
+                          </swe2:field>
+                          <swe2:field name="height">
+                            <swe2:Quantity definition="http://mmisw.org/ont/cf/parameter/height" axisID="Z" referenceFrame="#us.glos_45024_frame">
+                              <swe2:uom code="m"/>
+                            </swe2:Quantity>
+                          </swe2:field>
+                        </swe2:DataRecord>
+                      </swe2:field>
+                    </swe2:DataRecord>
+                  </swe2:field>
+                </swe2:DataRecord>
+              </swe2:field>
+            </swe2:DataRecord>
+          </swe2:field>
+          <swe2:field name="observationData">
+            <swe2:DataArray definition="http://mmisw.org/ont/ioos/swe_element_type/sensorObservationCollection">
+              <swe2:elementCount>
+                <swe2:Count>
+                  <swe2:value>5</swe2:value>
+                </swe2:Count>
+              </swe2:elementCount>
+              <swe2:elementType name="observations">
+                <swe2:DataRecord definition="http://mmisw.org/ont/ioos/swe_element_type/sensorObservations">
+                  <swe2:field name="time">
+                    <swe2:Time definition="http://www.opengis.net/def/property/OGC/0/SamplingTime">
+                      <swe2:uom xlink:href="http://www.opengis.net/def/uom/ISO-8601/0/Gregorian"/>
+                    </swe2:Time>
+                  </swe2:field>
+                  <swe2:field name="sensor">
+                    <swe2:DataChoice definition="http://mmisw.org/ont/ioos/swe_element_type/sensors">
+                      <swe2:item name="us.glos_45024_air_temperature">
+                        <swe2:DataRecord definition="http://mmisw.org/ont/ioos/swe_element_type/sensor">
+                          <swe2:field name="air_temperature">
+                            <swe2:Quantity definition="http://mmisw.org/ont/cf/parameter/air_temperature">
+                              <swe2:uom xlink:href="urn:ogc:def:uom:udunits:2:Cel"/>
+                            </swe2:Quantity>
+                          </swe2:field>
+                        </swe2:DataRecord>
+                      </swe2:item>
+                      <swe2:item name="dummy_item"/>
+                    </swe2:DataChoice>
+                  </swe2:field>
+                </swe2:DataRecord>
+              </swe2:elementType>
+              <swe2:encoding>
+                <swe2:TextEncoding decimalSeparator="." tokenSeparator="," blockSeparator="&#10;"/>
+              </swe2:encoding>
+              <swe2:values>2015-05-19T07:10:00.000Z,us.glos_45024_air_temperature,6.16
+                2015-05-19T07:20:00.000Z,us.glos_45024_air_temperature,5.89
+                2015-05-19T07:30:00.000Z,us.glos_45024_air_temperature,5.78
+                2015-05-19T07:40:00.000Z,us.glos_45024_air_temperature,5.79
+                2015-05-19T07:50:00.000Z,us.glos_45024_air_temperature,5.76
+              </swe2:values>
+            </swe2:DataArray>
+          </swe2:field>
+        </swe2:DataRecord>
+      </om:result>
+    </om:Observation>
+  </om:member>
+</om:ObservationCollection>

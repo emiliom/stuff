@@ -1,6 +1,6 @@
 ## Install conda
 
-Here are the instructions for installing Python on Windows. I tested them on my wife's Windows 10 laptop.
+Here are the instructions for installing **Python on Windows** using `conda`. You can find MacOS instructions [here](https://conda.io/projects/conda/en/latest/user-guide/install/index.html), but the process should be pretty similar as on Windows (except that you can do it via the command line, I think).
 
 We'll install Python (3.8) via the *conda* "open source package management system and environment management system" (https://conda.io). The advantages of conda include:
 

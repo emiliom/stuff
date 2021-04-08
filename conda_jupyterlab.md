@@ -7,10 +7,13 @@ We'll point to tutorials and documentation created for [OceanHackWeek (OHW) 2020
 
 - Git and GitHub: See the OHW [Git](https://oceanhackweek.github.io/ohw-resources/prep/git/) pages, and the OHW [Git and GitHub pre-hackweek tutorial](https://oceanhackweek.github.io/ohw-resources/schedule/#thursday-august-6) (slides and video recording are available).
 - Jupyter: See the WaterHackWeek section on [Jupyter notebooks and the Jupyter ecosystem](https://waterhackweek.github.io/learning-resources/prep/jupyterhub/#jupyter-notebooks-and-the-jupyter-ecosystem) and recommended [References and Resources](https://waterhackweek.github.io/learning-resources/prep/jupyterhub/#references-and-resources) at the end of that page. See also the OHW 20 [Jupyter and Scientific Python basics pre-hackweek tutorial materials](https://oceanhackweek.github.io/ohw-resources/schedule/#friday-august-7)
+- [Setup Your Earth Analytics Python (conda), Git, Bash Environment On Your Computer Setup earth analytics environment Workshop | Earth Data Science - Earth Lab](https://www.earthdatascience.org/workshops/setup-earth-analytics-python/)
 - Scientific Python: See the OHW [Jupyter and Scientific Python basics pre-hackweek tutorial materials](https://oceanhackweek.github.io/ohw-resources/schedule/#friday-august-7). Then see the OHW [Xarray tutorial](https://oceanhackweek.github.io/ohw-resources/schedule/#monday-august-10).
-
+- See  [Introduction to Jupyter For Python | Earth Data Science - Earth Lab](https://www.earthdatascience.org/courses/intro-to-earth-data-science/open-reproducible-science/jupyter-python/). More broadly, you can check out the [Introduction to Earth Data Science | Earth Data Science - Earth Lab](https://www.earthdatascience.org/courses/intro-to-earth-data-science/)
 
 ## conda
+
+Go through these instructions. You may also find these materials very helpful: [Set Up Your Conda Earth Analytics Python Environment Setup earth analytics environment | Earth Data Science - Earth Lab](https://www.earthdatascience.org/workshops/setup-earth-analytics-python/setup-python-conda-earth-analytics-environment/)
 
 ### Installation (installing Python on Windows through conda)
 

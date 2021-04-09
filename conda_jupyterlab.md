@@ -19,7 +19,7 @@ Go through these instructions. You may also find these materials very helpful: [
 
 We'll install Python (3.8) via the [conda](https://conda.io) "open source package management system and environment management system". The advantages of conda include:
 
-- Doesn't require administrative privileges (though I believe you do have admin rights)
+- Doesn't require administrative privileges
 - Can be installed side by side with other Python installations w/o interfering with them
 - Allows you to easily create "virtual environments" with custom Python installations
 

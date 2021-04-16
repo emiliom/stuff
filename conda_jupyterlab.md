@@ -2,6 +2,8 @@
 
 We'll point to tutorials and documentation created for [OceanHackWeek (OHW) 2020](https://oceanhackweek.github.io) at the [OHW Resources site](https://oceanhackweek.github.io/ohw-resources/). When reading these materials, ignore references to JupyterHub or "the Hub". That's a cloud-based deployment of Jupyter. For now, we'll be working only on Jupyter in your own computer ("locally").
 
+To run OHW20 Python tutorials locally, use [this conda environment file](https://github.com/emiliom/stuff/blob/master/ohw20_environment.yml) adapted by paring down the [original OHW20 conda environment file](https://github.com/oceanhackweek/ohw20-tutorials/blob/master/environment.yml), removing all R packages and other packages related to a JupyterHub deployment.
+
 
 ## Git/GitHub, Jupyter and relevant Python packages
 

@@ -16,7 +16,11 @@ To run OHW20 Python tutorials locally, use [this conda environment file](https:/
 
 ## conda
 
-Go through these instructions. You may also find these materials very helpful: [Set Up Your Conda Earth Analytics Python Environment Setup earth analytics environment | Earth Data Science - Earth Lab](https://www.earthdatascience.org/workshops/setup-earth-analytics-python/setup-python-conda-earth-analytics-environment/)
+Go through these instructions. You may also find these materials very helpful: 
+- From our very own [Don Setiawan](https://github.com/lsetiawan/):
+  - [Start working with data using Python (Part 0: The Setup)](https://donsetiawan.medium.com/start-working-with-data-using-python-part-0-the-setup-ac1b7c87df8f)
+  - [Start working with data using Python (Part 1: Conda Stuff)](https://donsetiawan.medium.com/start-working-with-data-using-python-part-1-conda-stuff-8111bbb1132f)
+- [Set Up Your Conda Earth Analytics Python Environment Setup earth analytics environment | Earth Data Science - Earth Lab](https://www.earthdatascience.org/workshops/setup-earth-analytics-python/setup-python-conda-earth-analytics-environment/)
 
 ### Installation (installing Python on Windows through conda)
 

@@ -9,6 +9,7 @@ Disruptive changes are preced by the prefixed **(D)**
   - EM: It occurs to me now that, in terms of match-up with SONAR-netCDF4, the Beam group in AZFP and EK60 echopype nc/zarr files could be described as having an implicit, single-value `beam` dimension. Single-value dimensions can be implemented interchangeably in a netcdf file either explicitly with the dimension or implicitly (refer to the CF convention). In SONAR-netCDF4, since there is an explicit `beam` dimension, single-beam data would be expected to be stored with beam as a dimension.
   - issue of convention use of "beam" dimension (ie, >1 beams per Beam subgroup? Based on "beam mode" alone?)
 - `range_bin` issues
+   `range_bin` is not in the convention, but it's central to the echopype data structure
   - [Currently this coordinate variables doesn't have attributes.](https://github.com/OSOceanAcoustics/echopype/issues/373) Add units, long name, etc
   - small TODO, WJ's "convention vlen" comments. See also [this discussion in the SONAR-netCDF4 github repo](https://github.com/ices-publications/SONAR-netCDF4/issues/28) that directly addresses that aspect of the convention, and potential problems with it
 - **(D)** Rename `time` dimensions and coordinates in `Platform` group, to adhere to the convention naming guideline. `location_time` does not comply; it should be `time1`, `time2`, etc

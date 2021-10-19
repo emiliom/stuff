@@ -12,6 +12,8 @@ Disruptive changes are preced by the prefixed **(D)**
   - `range_bin` is not in the convention, but it's central to the echopype data structure
   - [Currently this coordinate variables doesn't have attributes.](https://github.com/OSOceanAcoustics/echopype/issues/373) Add units, long name, etc
   - small TODO, WJ's "convention vlen" comments. See also [this discussion in the SONAR-netCDF4 github repo](https://github.com/ices-publications/SONAR-netCDF4/issues/28) that directly addresses that aspect of the convention, and potential problems with it
+  - > (from WJ) Do I understand it correctly that we will keep this format (hence no disruptive changes) but will at some point provide a converter to go back and forth between the echopype format and the convention (or if the convention change to more similar to what we have, then we can just be consistent with variable names and keep going?)
+
 - **(D)** Rename `time` dimensions and coordinates in `Platform` group, to adhere to the convention naming guideline. `location_time` does not comply; it should be `time1`, `time2`, etc
 - Restart the element-by-element compliance check tables
 - **Fix current errors/issues with EK60**
@@ -28,6 +30,8 @@ Disruptive changes are preced by the prefixed **(D)**
   - Add missing core CF attributes (feature_type, cdm, etc), where appropriate
   - Add some useful attributes from ACDD, specially ones involving spatial and temporay bounding boxes; roles; etc; in top-level group? Will improve discoverability.
   - See AcMeta to see if we can define an initial subset of it that ideally follows the ACDD attributes we'd be interested in
+  - > (from WJ): Do you think these additions would potentially make their way into later versions of the convention?
+
 - **Go over other relevant discussions and notes, to see if I'm missing anything**
   - Google Drive files (mappings, sample nc files, etc) under [echopype/convention_check](https://drive.google.com/drive/u/0/folders/1MPBRzrehXk9qAt8ZuBjFzR2Xh-0WFXXU)
   - [Document and verify compliance with SONAR-netCDF4 convention #210](https://github.com/OSOceanAcoustics/echopype/issues/210)
